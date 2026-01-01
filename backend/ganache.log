@@ -1,0 +1,428 @@
+Ganache CLI v6.12.2 (ganache-core: 2.13.2)
+
+Available Accounts
+==================
+(0) 0xc2A99C01563803bD2C56826F80a36cca793B2614 (100 ETH)
+(1) 0xaaED4607A8D6440e91547F2157E2a49f001b5583 (100 ETH)
+(2) 0x65536b03E29A9feA3b3B07cDB50280cFf5246563 (100 ETH)
+(3) 0x8dBD1109DdB9EAB0D478eADfcbfF68E4fd41dEe9 (100 ETH)
+(4) 0x13051F0c7f0ba07ad54A1099e95a18d5B5a327b2 (100 ETH)
+(5) 0xb27b0628475A4493267162750179CeEbDDf65Ce0 (100 ETH)
+(6) 0xfa4A89D1a6D8c70024d2377b60e3a48D1BDd4D50 (100 ETH)
+(7) 0xEe9A5af6434492644eBF9093fb63560c6523d427 (100 ETH)
+(8) 0x16F79bE0A2184EB53c31489B8b4C868Da6478640 (100 ETH)
+(9) 0x111bC3840509f3Eb6978B1c7138F4Ad5C745Fa9a (100 ETH)
+
+Private Keys
+==================
+(0) 0xdd497f54adfe30f1009cea0cfda44150569e6e5f3fd85db22fd8f5e5c0fd76fe
+(1) 0xbce5269cb6cea3832b3f53e4a85a1feeb9fadb3eddf928d610baa476d822a4ce
+(2) 0xf9200564df9a11cae99ff170579ac8b748277d805e7c6251370cc750d7154e2f
+(3) 0xd4b32cdf94f866332b6b0284a6a74547f37d7d339430d3576f2b826591806eed
+(4) 0xd2c0e8167a73cb07092425466482a92440c04544251a3e2789c2705c852d8a76
+(5) 0xccc982e4eaffcb352e04cb29de7eb085dc8ab1871a516efaf405aef56d41f930
+(6) 0x0f8d908d4b1004cd4862c82d15362cca35aeb0458bdd31815a83688f0322ffed
+(7) 0x67e602895d1533ddc41e9bb1527d59c3e514093163124c35541b057eb154fb31
+(8) 0x4250b19dbdf4074eea76da11eec510291a4279b6c2c07775a17c425844c723b5
+(9) 0xe75a0b6521129850731b76de00562eea1c510f0bb5fe90bed76a0dc3ba614836
+
+HD Wallet
+==================
+Mnemonic:      drink fury silver eternal ketchup ski ceiling nominee merry surface dust surprise
+Base HD Path:  m/44'/60'/0'/0/{account_index}
+
+Gas Price
+==================
+20000000000
+
+Gas Limit
+==================
+6721975
+
+Call Gas Limit
+==================
+9007199254740991
+
+Listening on 0.0.0.0:8545
+eth_blockNumber
+eth_blockNumber
+eth_blockNumber
+net_version
+eth_accounts
+eth_getBlockByNumber
+eth_accounts
+net_version
+eth_getBlockByNumber
+eth_getBlockByNumber
+net_version
+eth_getBlockByNumber
+eth_estimateGas
+net_version
+eth_blockNumber
+eth_getBlockByNumber
+eth_estimateGas
+eth_getBlockByNumber
+eth_gasPrice
+eth_sendTransaction
+
+  Transaction: 0x208bc30076ba3333f0b5ec73e570be5ba49fa5898954c79d2b0078d00b3997b6
+  Contract created: 0xe9d819305b0c24175d1724bd12e3bc1bce8983da
+  Gas usage: 698208
+  Block Number: 1
+  Block Time: Thu Jan 01 2026 21:16:14 GMT+0300 (Arabian Standard Time)
+
+eth_getTransactionReceipt
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+eth_blockNumber
+web3_clientVersion
+eth_accounts
+eth_blockNumber
+web3_clientVersion
+eth_accounts
+eth_blockNumber
+eth_getCode
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x3f7f3eb0fa45e467b36db1002f5a5da109ec785edc2635b4a12413126ec63b75
+  Gas usage: 176665
+  Block Number: 2
+  Block Time: Thu Jan 01 2026 21:27:01 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xf79667a891efb8c410b43fe5d8e7a734b485163bdb205c57a3cf2d9eb30edd92
+  Gas usage: 176809
+  Block Number: 3
+  Block Time: Thu Jan 01 2026 21:30:13 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x503e22c47b944149b1e16490f071db1d5be3318430b114c628efd3bfa957909c
+  Gas usage: 176665
+  Block Number: 4
+  Block Time: Thu Jan 01 2026 21:34:06 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xbc97f73c05577a5d744161ecd10471df02f2b557967c3d744db1d79050450b58
+  Gas usage: 176677
+  Block Number: 5
+  Block Time: Thu Jan 01 2026 21:34:33 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_chainId
+eth_call
+eth_chainId
+web3_clientVersion
+eth_chainId
+eth_call
+eth_chainId
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x0b2e74a417e93b325b6e721db4eae4eb84cf8ff7ab6ccf8d5dcdcb420924e1e1
+  Gas usage: 176677
+  Block Number: 6
+  Block Time: Thu Jan 01 2026 21:55:24 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xb18e2e7efd46a00fcd398535d693cfe0eee6897074f3fe4000f1b154b8fb7646
+  Gas usage: 176677
+  Block Number: 7
+  Block Time: Thu Jan 01 2026 22:13:35 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xb5d25ca800e976031e171cc574f758c9a33e0efb688d2d63abd77444dbff8de0
+  Gas usage: 176713
+  Block Number: 8
+  Block Time: Thu Jan 01 2026 22:26:34 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+net_listening
+eth_getCode
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0x65668207e391ac6f0906d07ef9030aa8fa5f96c6b49e9affba5a7ebe7f2d6ad3
+  Gas usage: 176749
+  Block Number: 9
+  Block Time: Thu Jan 01 2026 22:40:53 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_newFilter
+eth_getFilterLogs
+web3_clientVersion
+eth_accounts
+eth_getBlockByNumber
+eth_chainId
+eth_chainId
+eth_estimateGas
+eth_chainId
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xc4e9d93fa8be020e89098c31f212ebb776ec4dc77ce87661554eb1457494fd86
+  Gas usage: 176677
+  Block Number: 10
+  Block Time: Thu Jan 01 2026 23:07:54 GMT+0300 (Arabian Standard Time)
+
+eth_chainId
+eth_getTransactionReceipt
+eth_getBlockByNumber

@@ -1,0 +1,1577 @@
+
+> frontend@0.1.0 start
+> react-scripts start
+
+(node:43242) [DEP0176] DeprecationWarning: fs.F_OK is deprecated, use fs.constants.F_OK instead
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:43242) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(node:43242) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+Compiled successfully!
+
+You can now view frontend in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.1.24:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+ERROR in ./node_modules/react-vertical-timeline-component/dist-es6/index.js
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+
+ERROR in ./node_modules/react-vertical-timeline-component/style.min.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./node_modules/react-vertical-timeline-component/style.min.css)
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/style.min.css'
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+ERROR in ./node_modules/react-vertical-timeline-component/dist-es6/index.js
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+
+ERROR in ./node_modules/react-vertical-timeline-component/style.min.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./node_modules/react-vertical-timeline-component/style.min.css)
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/style.min.css'
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+ERROR in ./node_modules/react-vertical-timeline-component/dist-es6/index.js
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+
+ERROR in ./node_modules/react-vertical-timeline-component/style.min.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./node_modules/react-vertical-timeline-component/style.min.css)
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/style.min.css'
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+ERROR in ./node_modules/react-vertical-timeline-component/dist-es6/index.js
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+
+ERROR in ./node_modules/react-vertical-timeline-component/style.min.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./node_modules/react-vertical-timeline-component/style.min.css)
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/style.min.css'
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+ERROR in ./node_modules/react-vertical-timeline-component/dist-es6/index.js
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/dist-es6/index.js'
+
+ERROR in ./node_modules/react-vertical-timeline-component/style.min.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./node_modules/react-vertical-timeline-component/style.min.css)
+Module build failed (from ./node_modules/source-map-loader/dist/cjs.js):
+Error: ENOENT: no such file or directory, open '/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/react-vertical-timeline-component/style.min.css'
+
+webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+Syntax error: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.css Unknown word e (76:16)
+  74 |   background-color: #f5f5f5;
+  75 |   cursor: not-allowed;
+> 76 |   opacity: 0.6;e
+     |                ^
+  77 | }
+  78 |
+ERROR in ./src/AddEvidence.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/AddEvidence.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+SyntaxError
+
+(76:16) /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.css Unknown word e
+
+  74 |   background-color: #f5f5f5;
+  75 |   cursor: not-allowed;
+> 76 |   opacity: 0.6;e
+     |                ^
+  77 | }
+  78 |
+
+webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+Syntax error: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.css Unknown word e (76:16)
+  74 |   background-color: #f5f5f5;
+  75 |   cursor: not-allowed;
+> 76 |   opacity: 0.6;e
+     |                ^
+  77 | }
+  78 |
+ERROR in ./src/AddEvidence.css (./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].oneOf[5].use[2]!./node_modules/source-map-loader/dist/cjs.js!./src/AddEvidence.css)
+Module build failed (from ./node_modules/postcss-loader/dist/cjs.js):
+SyntaxError
+
+(76:16) /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.css Unknown word e
+
+  74 |   background-color: #f5f5f5;
+  75 |   cursor: not-allowed;
+> 76 |   opacity: 0.6;e
+     |                ^
+  77 | }
+  78 |
+
+webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: JSX attributes must only be assigned a non-empty expression. (90:18) (90:18)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: JSX attributes must only be assigned a non-empty expression. (90:18)
+
+  88 |     <div className="add-evidence-container">
+  89 |       <div className="add-evidence-card">
+> 90 |         <h1 style={}>Add Evidence</h1>
+     |                   ^
+  91 |         <p className="subtitle">Add a new piece of evidence to the blockchain chain of custody</p>
+  92 |
+  93 |         <div className="form-group">
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4635:16)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+    at FlowParserMixin.parseBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+    at FlowParserMixin.parseBlock (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13373:10)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:18:  Parsing error: JSX attributes must only be assigned a non-empty expression. (90:18)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token, expected "," (90:26) (90:26)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token, expected "," (90:26)
+
+  88 |     <div className="add-evidence-container">
+  89 |       <div className="add-evidence-card">
+> 90 |         <h1 style={{  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+     |                           ^
+  91 | }}>Add Evidence</h1>
+  92 |         <p className="subtitle">Add a new piece of evidence to the blockchain chain of custody</p>
+  93 |
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.expect (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6924:12)
+    at FlowParserMixin.parseObjectLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11894:14)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11403:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4661:31)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4633:21)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:26:  Parsing error: Unexpected token, expected "," (90:26)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (90:79) (90:79)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (90:79)
+
+  88 |     <div className="add-evidence-container">
+  89 |       <div className="add-evidence-card">
+> 90 |         <h1 style={{  fontfamily: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+     |                                                                                ^
+  91 | }}>Add Evidence</h1>
+  92 |         <p className="subtitle">Add a new piece of evidence to the blockchain chain of custody</p>
+  93 |
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.parseObjPropValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12053:21)
+    at FlowParserMixin.parseObjPropValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3368:26)
+    at FlowParserMixin.parsePropertyDefinition (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11989:17)
+    at FlowParserMixin.parseObjectLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11904:21)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11403:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4661:31)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4633:21)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:79:  Parsing error: Unexpected token (90:79)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (90:93) (90:93)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (90:93)
+
+  88 |     <div className="add-evidence-container">
+  89 |       <div className="add-evidence-card">
+> 90 |         <h1 style={{  fontfamily: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+     |                                                                                              ^
+  91 | }}>Add Evidence</h1>
+  92 |         <p className="subtitle">Add a new piece of evidence to the blockchain chain of custody</p>
+  93 |
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.parseObjPropValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12053:21)
+    at FlowParserMixin.parseObjPropValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3368:26)
+    at FlowParserMixin.parsePropertyDefinition (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11989:17)
+    at FlowParserMixin.parseObjectLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11904:21)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11403:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4661:31)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4633:21)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:93:  Parsing error: Unexpected token (90:93)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token, expected "," (90:67) (90:67)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token, expected "," (90:67)
+
+  88 |     <div className="add-evidence-container">
+  89 |       <div className="add-evidence-card">
+> 90 |         <h1 style={{  fontfamily: -apple-system, BlinkMacSystemFont"Helvetica Neue", Arial, sans-serif;
+     |                                                                    ^
+  91 | }}>Add Evidence</h1>
+  92 |         <p className="subtitle">Add a new piece of evidence to the blockchain chain of custody</p>
+  93 |
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.expect (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6924:12)
+    at FlowParserMixin.parseObjectLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11894:14)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11403:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4661:31)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4633:21)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:67:  Parsing error: Unexpected token, expected "," (90:67)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token, expected "," (90:98) (90:98)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token, expected "," (90:98)
+
+  88 |     <div className="add-evidence-container">
+  89 |       <div className="add-evidence-card">
+> 90 |         <h1 style={{  fontfamily: -apple-system, BlinkMacSystemFont: "Helvetica Neue", Arial, sans-serif;
+     |                                                                                                   ^
+  91 | }}>Add Evidence</h1>
+  92 |         <p className="subtitle">Add a new piece of evidence to the blockchain chain of custody</p>
+  93 |
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.expect (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6924:12)
+    at FlowParserMixin.parseObjectLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11894:14)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11403:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4661:31)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4633:21)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:98:  Parsing error: Unexpected token, expected "," (90:98)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (90:87) (90:87)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (90:87)
+
+  88 |     <div className="add-evidence-container">
+  89 |       <div className="add-evidence-card">
+> 90 |         <h1 style={{  fontfamily: -apple-system, BlinkMacSystemFont: "Helvetica Neue", ;
+     |                                                                                        ^
+  91 | }}>Add Evidence</h1>
+  92 |         <p className="subtitle">Add a new piece of evidence to the blockchain chain of custody</p>
+  93 |
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.parsePropertyName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12098:18)
+    at FlowParserMixin.parsePropertyDefinition (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11963:10)
+    at FlowParserMixin.parseObjectLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11904:21)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11403:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.jsxParseExpressionContainer (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4661:31)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4633:21)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:87:  Parsing error: Unexpected token (90:87)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+  Line 90:36:  'apple' is not defined   no-undef
+  Line 90:42:  'system' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:36:  'apple' is not defined   no-undef
+  Line 90:42:  'system' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+  Line 90:36:  'apple' is not defined   no-undef
+  Line 90:42:  'system' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 90:36:  'apple' is not defined   no-undef
+  Line 90:42:  'system' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (92:36) (92:36)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (92:36)
+
+  90 |         <h1 style={{  fontFamily: "Helvetica"}}>Add Evidence</h1>
+  91 |
+> 92 |         <div className="form-group" , style>
+     |                                     ^
+  93 |           <label htmlFor="case-id">Case ID (UUID):</label>
+  94 |           <input
+  95 |             id="case-id"
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.jsxParseIdentifier (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4598:12)
+    at FlowParserMixin.jsxParseNamespacedName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4605:23)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4681:22)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 92:36:  Parsing error: Unexpected token (92:36)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (92:36) (92:36)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (92:36)
+
+  90 |         <h1 style={{  fontFamily: "Helvetica"}}>Add Evidence</h1>
+  91 |
+> 92 |         <div className="form-group" , sty>
+     |                                     ^
+  93 |           <label htmlFor="case-id">Case ID (UUID):</label>
+  94 |           <input
+  95 |             id="case-id"
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.jsxParseIdentifier (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4598:12)
+    at FlowParserMixin.jsxParseNamespacedName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4605:23)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4681:22)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 92:36:  Parsing error: Unexpected token (92:36)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (92:36) (92:36)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (92:36)
+
+  90 |         <h1 style={{  fontFamily: "Helvetica"}}>Add Evidence</h1>
+  91 |
+> 92 |         <div className="form-group" , style >
+     |                                     ^
+  93 |           <label htmlFor="case-id">Case ID (UUID):</label>
+  94 |           <input
+  95 |             id="case-id"
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.jsxParseIdentifier (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4598:12)
+    at FlowParserMixin.jsxParseNamespacedName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4605:23)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4681:22)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 92:36:  Parsing error: Unexpected token (92:36)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (92:36) (92:36)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (92:36)
+
+  90 |         <h1 style={{  fontFamily: "Helvetica"}}>Add Evidence</h1>
+  91 |
+> 92 |         <div className="form-group" , style: >
+     |                                     ^
+  93 |           <label htmlFor="case-id">Case ID (UUID):</label>
+  94 |           <input
+  95 |             id="case-id"
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.jsxParseIdentifier (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4598:12)
+    at FlowParserMixin.jsxParseNamespacedName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4605:23)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4681:22)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 92:36:  Parsing error: Unexpected token (92:36)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/AddEvidence.jsx
+Syntax error: Unexpected token (92:36) (92:36)
+ERROR in ./src/AddEvidence.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/AddEvidence.jsx: Unexpected token (92:36)
+
+  90 |         <h1 style={{  fontFamily: "Helvetica"}}>Add Evidence</h1>
+  91 |
+> 92 |         <div className="form-group" , styl >
+     |                                     ^
+  93 |           <label htmlFor="case-id">Case ID (UUID):</label>
+  94 |           <input
+  95 |             id="case-id"
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.jsxParseIdentifier (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4598:12)
+    at FlowParserMixin.jsxParseNamespacedName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4605:23)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4681:22)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+
+ERROR in [eslint] 
+src/AddEvidence.jsx
+  Line 92:36:  Parsing error: Unexpected token (92:36)
+
+webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/Home.jsx
+Syntax error: Unexpected token, expected "..." (10:20) (10:20)
+ERROR in ./src/Home.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/Home.jsx: Unexpected token, expected "..." (10:20)
+
+   8 |     <div className="home-container">
+   9 |       <div className="home-card">
+> 10 |         <h import { useState } from "react";
+     |                     ^
+  11 |         import "./AddEvidence.css";
+  12 |         
+  13 |         const AddEvidence = () => {
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.expect (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6924:12)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4674:12)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+    at FlowParserMixin.parseBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+
+ERROR in [eslint] 
+src/Home.jsx
+  Line 10:20:  Parsing error: Unexpected token, expected "..." (10:20)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/Home.jsx
+Syntax error: Unexpected token (10:11) (10:11)
+ERROR in ./src/Home.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/Home.jsx: Unexpected token (10:11)
+
+   8 |     <div className="home-container">
+   9 |       <div className="home-card">
+> 10 |         <h 1>Chain of Custody System</h1>
+     |            ^
+  11 |
+  12 |         <div className="nav-grid">
+  13 |           <button
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.unexpected (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6644:16)
+    at FlowParserMixin.jsxParseIdentifier (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4598:12)
+    at FlowParserMixin.jsxParseNamespacedName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4605:23)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4681:22)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+
+ERROR in [eslint] 
+src/Home.jsx
+  Line 10:11:  Parsing error: Unexpected token (10:11)
+
+webpack compiled with 2 errors
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/Home.jsx
+Syntax error: JSX attributes must only be assigned a non-empty expression. (10:18) (10:18)
+ERROR in ./src/Home.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/src/Home.jsx: JSX attributes must only be assigned a non-empty expression. (10:18)
+
+   8 |     <div className="home-container">
+   9 |       <div className="home-card">
+> 10 |         <h1 style={}>Chain of Custody System</h1>
+     |                   ^
+  11 |
+  12 |         <div className="nav-grid">
+  13 |           <button
+    at constructor (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:367:19)
+    at FlowParserMixin.raise (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6624:19)
+    at FlowParserMixin.jsxParseAttributeValue (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4635:16)
+    at FlowParserMixin.jsxParseAttribute (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4682:38)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4696:28)
+    at FlowParserMixin.jsxParseOpeningElementAfterName (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4097:18)
+    at FlowParserMixin.jsxParseOpeningElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4691:17)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4715:33)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElementAt (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4727:32)
+    at FlowParserMixin.jsxParseElement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4778:17)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4788:19)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:39
+    at FlowParserMixin.tryParse (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:6932:20)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3527:18)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12500:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10864:17)
+    at FlowParserMixin.parseMaybeAssignAllowInOrVoidPattern (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12567:17)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11747:28)
+    at FlowParserMixin.parseParenAndDistinguishExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3620:18)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11395:23)
+    at FlowParserMixin.parseExprAtom (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:4793:20)
+    at FlowParserMixin.parseExprSubscripts (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11145:23)
+    at FlowParserMixin.parseUpdate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11130:21)
+    at FlowParserMixin.parseMaybeUnary (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:11110:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10963:61)
+    at FlowParserMixin.parseExprOps (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10968:23)
+    at FlowParserMixin.parseMaybeConditional (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10945:23)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10895:21)
+    at FlowParserMixin.parseMaybeAssign (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:3578:18)
+    at FlowParserMixin.parseExpressionBase (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10848:23)
+    at /Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:39
+    at FlowParserMixin.allowInAnd (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12495:16)
+    at FlowParserMixin.parseExpression (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:10844:17)
+    at FlowParserMixin.parseReturnStatement (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13218:28)
+    at FlowParserMixin.parseStatementContent (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12874:21)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12843:17)
+    at FlowParserMixin.parseStatementLike (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:2945:24)
+    at FlowParserMixin.parseStatementListItem (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:12823:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13392:61)
+    at FlowParserMixin.parseBlockBody (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13385:10)
+    at FlowParserMixin.parseBlock (/Users/shanawaz/Desktop/c files/ranchi gdc/Ranchihacks/frontend/node_modules/@babel/parser/lib/index.js:13373:10)
+
+ERROR in [eslint] 
+src/Home.jsx
+  Line 10:18:  Parsing error: JSX attributes must only be assigned a non-empty expression. (10:18)
+
+webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/Home.jsx
+  Line 10:21:  'fontF' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+ERROR in [eslint] 
+src/Home.jsx
+  Line 10:21:  'fontF' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/Home.jsx
+  Line 10:21:  'fontFamily' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+ERROR in [eslint] 
+src/Home.jsx
+  Line 10:21:  'fontFamily' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+
+webpack compiled with 1 error
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully
+Compiling...
+Compiled successfully!
+webpack compiled successfully

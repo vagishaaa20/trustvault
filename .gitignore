@@ -1,0 +1,20 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Environment
+.env
+
+# Uploads / evidence
+backend/uploads/
+uploads/
+
+# OS
+.DS_Store
+Thumbs.db

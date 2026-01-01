@@ -1,0 +1,259 @@
+/* CheckEvidence - Minimalist Grey Design */
+
+.check-evidence-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.check-evidence-card {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+.check-evidence-card h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  color: #333;
+  font-weight: 600;
+}
+
+.check-evidence-card .subtitle {
+  margin: 0 0 24px 0;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background: #f9f9f9;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  background: white;
+  border-color: #999;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
+
+.btn-refresh {
+  padding: 10px 16px;
+  background: #555;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-refresh:hover {
+  background: #333;
+}
+
+/* Status Messages */
+.status-loading,
+.status-error,
+.status-empty {
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.status-loading {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.status-error {
+  background: #fef2f2;
+  color: #c00;
+  border: 1px solid #fcc;
+}
+
+.status-empty {
+  background: #f5f5f5;
+  color: #999;
+  border: 1px solid #e0e0e0;
+}
+
+/* Records */
+.records-container {
+  margin-top: 20px;
+}
+
+.record-count {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.evidence-record {
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: all 0.2s ease;
+}
+
+.evidence-record:hover {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Record Header */
+.record-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.record-number {
+  font-size: 12px;
+  font-weight: 600;
+  color: #777;
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+.record-block {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Record Grid */
+.record-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.record-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.record-item .label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.record-item .value {
+  font-size: 13px;
+  color: #333;
+  word-break: break-word;
+}
+
+.record-item .value.text-small {
+  font-size: 12px;
+  color: #666;
+}
+
+.record-item .value.mono {
+  font-family: "Monaco", "Courier New", monospace;
+}
+
+/* Hash Display */
+.record-hash {
+  margin-bottom: 0;
+}
+
+.record-hash .label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.hash-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 8px 10px;
+}
+
+.hash-display code {
+  flex: 1;
+  font-family: "Monaco", "Courier New", monospace;
+  font-size: 11px;
+  color: #555;
+  word-break: break-all;
+  background: transparent;
+}
+
+.btn-copy-small {
+  padding: 4px 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.btn-copy-small:hover {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .check-evidence-card {
+    padding: 20px;
+  }
+
+  .record-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
