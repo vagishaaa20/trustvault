@@ -1,5 +1,3 @@
-
-
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 echo "=========================================="
@@ -41,7 +39,7 @@ echo "All services starting!"
 echo "=========================================="
 echo ""
 echo "Services will be available at:"
-echo "  - Ganache:   http://localhost:8545 (must be running)"
+echo "  - Ganache:   http://localhost:7545 (must be running)"
 echo "  - Backend:   http://localhost:5001"
 echo "  - Frontend:  http://localhost:3000"
 echo ""

@@ -39,7 +39,21 @@
     ]
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
-    "hardhat": "^3.1.2"
-  }
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.22.1"
+  },
+  "description": "Implementing blockchain technology to enhance the chain of custody process for forensic evidence records. The project ensures the preservation of evidence integrity by recording its history from discovery to case closure. The chain of custody form tracks storage locations, access history, and actions performed on the evidence.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShanawazS-bit/ranchigdg-backup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShanawazS-bit/ranchigdg-backup/issues"
+  },
+  "homepage": "https://github.com/ShanawazS-bit/ranchigdg-backup#readme"
 }

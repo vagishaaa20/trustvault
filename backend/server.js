@@ -50,7 +50,7 @@ app.post("/upload", upload.single("video"), async (req, res) => {
     // Generate hash for the uploaded video
     const videoHash = await generateVideoHash(videoPath);
 
-    const pythonExe = "/Users/shanawaz/Desktop/c files/ranchi gdc/.venv/bin/python";
+    const pythonExe = "python";
     const scriptPath = path.join(__dirname, "..", "insert.py");
     const quoted = (s) => `"${s.replace(/"/g, '\\"')}"`;
     const cmd = `${quoted(pythonExe)} ${quoted(scriptPath)} ${quoted(caseId)} ${quoted(evidenceId)} ${quoted(videoPath)}`;
@@ -88,7 +88,7 @@ app.post("/verify", upload.single("video"), async (req, res) => {
     // Generate hash for the uploaded video
     const videoHash = await generateVideoHash(videoPath);
 
-    const pythonExe = "/Users/shanawaz/Desktop/c files/ranchi gdc/.venv/bin/python";
+    const pythonExe = "python";
     const scriptPath = path.join(__dirname, "..", "verifyBlock.py");
     const quoted = (s) => `"${s.replace(/"/g, '\\"')}"`;
     const cmd = `${quoted(pythonExe)} ${quoted(scriptPath)} ${quoted(evidenceId)} ${quoted(videoPath)}`;
@@ -114,7 +114,7 @@ app.post("/verify", upload.single("video"), async (req, res) => {
 
 /* ---------- QUERY ALL EVIDENCE ---------- */
 app.get("/evidence", (req, res) => {
-  const pythonExe = "/Users/shanawaz/Desktop/c files/ranchi gdc/.venv/bin/python";
+  const pythonExe = "python";
   const scriptPath = path.join(__dirname, "..", "queryEvidence.py");
   const quoted = (s) => `"${s.replace(/"/g, '\\"')}"`;
   const cmd = `${quoted(pythonExe)} ${quoted(scriptPath)}`;

@@ -18,3 +18,22 @@ uploads/
 # OS
 .DS_Store
 Thumbs.db
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Uploads (very important)
+uploads/
+
+# Env
+.env
+
+# OS
+.DS_Store
+Thumbs.db
