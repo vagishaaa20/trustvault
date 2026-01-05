@@ -47,7 +47,7 @@ This will:
 4. Select a video file
 5. Click "Upload Evidence"
 
-✅ Should work now!
+ Should work now!
 
 ---
 

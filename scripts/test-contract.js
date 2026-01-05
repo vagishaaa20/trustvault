@@ -34,7 +34,7 @@ async function main() {
   try {
     const addTx = await contract.addEvidence(caseId, evidenceId, hash);
     await addTx.wait();
-    console.log("✅ Evidence added successfully!");
+    console.log(" Evidence added successfully!");
     console.log("   - Case ID:", caseId);
     console.log("   - Evidence ID:", evidenceId);
     console.log("   - Hash:", hash);
@@ -48,7 +48,7 @@ async function main() {
   console.log("🔍 Test 2: Retrieving evidence hash...");
   try {
     const retrievedHash = await contract.getEvidenceHash(evidenceId);
-    console.log("✅ Retrieved hash:", retrievedHash);
+    console.log(" Retrieved hash:", retrievedHash);
     console.log("   Hash matches:", retrievedHash === hash ? "✓ YES" : "✗ NO");
   } catch (error) {
     console.error("❌ Error retrieving hash:", error.message);
@@ -60,7 +60,7 @@ async function main() {
   console.log("📋 Test 3: Retrieving full evidence details...");
   try {
     const evidence = await contract.getEvidence(evidenceId);
-    console.log("✅ Evidence details:");
+    console.log(" Evidence details:");
     console.log("   - Case ID:", evidence[0]);
     console.log("   - Evidence ID:", evidence[1]);
     console.log("   - Hash:", evidence[2]);
@@ -78,7 +78,7 @@ async function main() {
     await dupTx.wait();
     console.log("❌ ERROR: Should have prevented duplicate!");
   } catch (error) {
-    console.log("✅ Correctly prevented duplicate:", error.reason || error.message);
+    console.log(" Correctly prevented duplicate:", error.reason || error.message);
   }
 
   console.log("\n" + "=".repeat(50));

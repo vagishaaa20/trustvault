@@ -1,8 +1,4 @@
-#!/bin/bash
 
-# Chain of Custody System - Automatic Startup Script
-# This script starts Backend and Frontend in separate terminal windows
-# NOTE: Make sure Ganache is already running (using Ganache.app)
 
 PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -13,10 +9,10 @@ echo ""
 echo "Make sure Ganache is running on port 8545!"
 echo ""
 
-# Deploy smart contract
-echo "1. Deploying smart contract..."
+# Deploy smart contract and update Python files with new address
+echo "1. Deploying smart contract and updating config..."
 cd "$PROJECT_DIR"
-npx truffle migrate --network ganache 2>/dev/null || true
+bash "$PROJECT_DIR/deploy_and_update.sh"
 sleep 2
 
 # Start Backend in a new terminal window

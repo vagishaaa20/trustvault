@@ -75,7 +75,7 @@ const Overview = () => {
   };
 
   const getStatusText = (status) => {
-    if (status === "online" || status === "deployed") return "✅ Online";
+    if (status === "online" || status === "deployed") return " Online";
     if (status === "checking") return "🔄 Checking...";
     return "❌ Offline";
   };
@@ -134,11 +134,11 @@ const Overview = () => {
               <div className="feature-icon">📹</div>
               <h3>Add Evidence</h3>
               <ul className="feature-list">
-                <li>✅ Upload video files as evidence</li>
-                <li>✅ Generate SHA-256 cryptographic hash</li>
-                <li>✅ Store hash on Ethereum blockchain</li>
-                <li>✅ Immutable chain of custody record</li>
-                <li>✅ Real-time blockchain confirmation</li>
+                <li> Upload video files as evidence</li>
+                <li> Generate SHA-256 cryptographic hash</li>
+                <li> Store hash on Ethereum blockchain</li>
+                <li> Immutable chain of custody record</li>
+                <li> Real-time blockchain confirmation</li>
               </ul>
               <button
                 className="feature-button"
@@ -153,11 +153,11 @@ const Overview = () => {
               <div className="feature-icon">✅</div>
               <h3>Verify Evidence</h3>
               <ul className="feature-list">
-                <li>✅ Verify integrity of evidence files</li>
-                <li>✅ Recalculate SHA-256 hash</li>
-                <li>✅ Compare with blockchain record</li>
-                <li>✅ Detect tampering instantly</li>
-                <li>✅ Proof of authenticity</li>
+                <li> Verify integrity of evidence files</li>
+                <li> Recalculate SHA-256 hash</li>
+                <li> Compare with blockchain record</li>
+                <li> Detect tampering instantly</li>
+                <li> Proof of authenticity</li>
               </ul>
               <button
                 className="feature-button"
@@ -172,11 +172,11 @@ const Overview = () => {
               <div className="feature-icon">📋</div>
               <h3>View Records</h3>
               <ul className="feature-list">
-                <li>✅ Access stored evidence records</li>
-                <li>✅ View blockchain transactions</li>
-                <li>✅ Track chain of custody</li>
-                <li>✅ Audit trail visibility</li>
-                <li>✅ Historical evidence data</li>
+                <li> Access stored evidence records</li>
+                <li> View blockchain transactions</li>
+                <li> Track chain of custody</li>
+                <li> Audit trail visibility</li>
+                <li> Historical evidence data</li>
               </ul>
               <button
                 className="feature-button"

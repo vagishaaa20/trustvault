@@ -14,7 +14,7 @@ async function main() {
   await contract.waitForDeployment();
 
   const contractAddress = await contract.getAddress();
-  console.log("✅ EvidenceChain deployed to:", contractAddress);
+  console.log(" EvidenceChain deployed to:", contractAddress);
 
   // Save the contract address for later use
   const config = {

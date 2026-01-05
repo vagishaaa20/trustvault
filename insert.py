@@ -7,7 +7,7 @@ from web3 import Web3
 # ---------------- CONFIG ---------------- #
 
 GANACHE_URL = "http://127.0.0.1:8545"
-CONTRACT_ADDRESS = "0xE9d819305b0c24175d1724Bd12E3BC1BCe8983dA"
+CONTRACT_ADDRESS = "0xF4986B5eE525cB2f0E5d00B641018FCb4A22C907"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ABI_PATH = os.path.join(BASE_DIR, "compiled_code.json")
 
@@ -52,7 +52,7 @@ def insert(case_id, evidence_id, video_path):
     # 3️⃣ Load ABI
     with open(ABI_PATH) as f:
         compiled_data = json.load(f)
-        abi = compiled_data["contracts"]["EvidenceChain.sol"]["EvidenceChain"]["abi"]
+        abi = compiled_data["abi"]
 
     contract = web3.eth.contract(
         address=CONTRACT_ADDRESS,

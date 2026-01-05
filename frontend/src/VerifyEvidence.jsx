@@ -52,13 +52,13 @@ const VerifyEvidence = () => {
       if (data.tampered === false) {
         setVerificationResult({
           status: "authentic",
-          message: "✅ VERIFICATION PASSED - Evidence is AUTHENTIC",
+          message: "Evidence is AUTHENTIC",
           details: data.output,
         });
       } else {
         setVerificationResult({
           status: "tampered",
-          message: "❌ VERIFICATION FAILED - Evidence is TAMPERED",
+          message: "Evidence is TAMPERED",
           details: data.output,
         });
       }
@@ -92,8 +92,7 @@ const VerifyEvidence = () => {
     <div className="verify-container">
       <div className="verify-card">
         <h1 style={{  fontFamily: "Helvetica"}}> Verify Evidence</h1>
-        <p className="subtitle">uipload a video to verify its authenticity against the ID stored on thew blockchain</p>
-        <p className="subtitle">Upload a video to verify its authenticity against the ID stored on the blockchain</p>
+        <p className="subtitle">Upload a video to verify its authenticity against the ID stored on thew blockchain</p>
 
         <div className="form-group">
           <label htmlFor="evidence-id">Evidence ID:</label>
@@ -132,7 +131,7 @@ const VerifyEvidence = () => {
 
         {videoHash && (
           <div className="hash-display">
-            <h3>📌 Generated Hash (SHA-256):</h3>
+            <h3> Generated Hash (SHA-256):</h3>
             <div className="hash-value">{videoHash}</div>
             <button
               onClick={() => {

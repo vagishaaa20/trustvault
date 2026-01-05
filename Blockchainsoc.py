@@ -6,7 +6,6 @@ import argparse
 from datetime import datetime
 from collections import namedtuple
 
-# Import modules
 from error import *
 from initiate import initiate
 from insert import insert
@@ -17,7 +16,7 @@ from display_trial import display
 from log import log
 from verify import verify
 
-# Declare arguements
+
 parser = argparse.ArgumentParser()
 # Action = ["add", "checkout", "checkin", "log", "remove", "init", "verify"]
 parser.add_argument("action")

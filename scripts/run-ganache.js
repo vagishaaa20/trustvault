@@ -42,9 +42,9 @@ async function main() {
   console.log("\n" + "=".repeat(60) + "\n");
 
   // Parse the contract from Solidity (simplified for display)
-  console.log("✅ Contract structure validated");
-  console.log("✅ All required functions present");
-  console.log("✅ Ready for deployment");
+  console.log(" Contract structure validated");
+  console.log(" All required functions present");
+  console.log(" Ready for deployment");
 
   console.log("\n📝 Next steps:");
   console.log("1. Install Truffle: npm install -g truffle");

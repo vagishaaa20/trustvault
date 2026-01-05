@@ -7,7 +7,7 @@ from web3 import Web3
 # ---------------- CONFIG ---------------- #
 
 GANACHE_URL = "http://127.0.0.1:8545"
-CONTRACT_ADDRESS = "0xE9d819305b0c24175d1724Bd12E3BC1BCe8983dA"
+CONTRACT_ADDRESS = "0xF4986B5eE525cB2f0E5d00B641018FCb4A22C907"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ABI_PATH = os.path.join(BASE_DIR, "compiled_code.json")
 
@@ -32,23 +32,23 @@ def verify(evidence_id, video_path):
     new_hash = generate_video_hash(video_path)
     verify_time = datetime.now(timezone.utc).isoformat()
 
-    print("🆔 Evidence ID    :", evidence_id)
-    print("📄 File Path      :", video_path)
-    print("🔐 Computed Hash  :", new_hash)
-    print("⏱ Verification   :", verify_time)
+    print(" Evidence ID    :", evidence_id)
+    print(" File Path      :", video_path)
+    print(" Computed Hash  :", new_hash)
+    print(" Verification   :", verify_time)
     print("-------------------------------------------")
 
     # 2️⃣ Connect to blockchain
     web3 = Web3(Web3.HTTPProvider(GANACHE_URL))
     if not web3.is_connected():
-        raise Exception("❌ Blockchain not connected")
+        raise Exception(" Blockchain not connected")
 
-    print("🔗 Blockchain     : Connected")
+    print(" Blockchain     : Connected")
 
     # 3️⃣ Load ABI
     with open(ABI_PATH) as f:
         compiled_data = json.load(f)
-        abi = compiled_data["contracts"]["EvidenceChain.sol"]["EvidenceChain"]["abi"]
+        abi = compiled_data["abi"]
 
     contract = web3.eth.contract(
         address=CONTRACT_ADDRESS,
@@ -59,7 +59,7 @@ def verify(evidence_id, video_path):
     try:
         stored_hash = contract.functions.getEvidenceHash(evidence_id).call()
     except Exception:
-        print("❌ Evidence not found on blockchain")
+        print(" Evidence not found on blockchain")
         print("===========================================")
         return False
 
@@ -68,13 +68,13 @@ def verify(evidence_id, video_path):
 
     # 5️⃣ Compare hashes
     if stored_hash == new_hash:
-        print("✅ VERIFICATION RESULT : AUTHENTIC")
-        print("📌 Status             : Evidence not tampered")
+        print(" VERIFICATION RESULT : AUTHENTIC")
+        print("Status             : Evidence not tampered")
         print("===========================================")
         return True
     else:
-        print("❌ VERIFICATION RESULT : TAMPERED")
-        print("⚠️ Status              : Evidence modified")
+        print(" VERIFICATION RESULT : TAMPERED")
+        print(" Status              : Evidence modified")
         print("===========================================")
         return False
 

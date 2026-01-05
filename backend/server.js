@@ -96,11 +96,15 @@ app.post("/verify", upload.single("video"), async (req, res) => {
     console.log("Executing verify command:", cmd);
 
     exec(cmd, { maxBuffer: 1024 * 1024 * 10 }, (error, stdout, stderr) => {
-      if (error && error.code !== 0) {
-        console.error("Verify error:", stderr || error.message);
-        return res.status(400).json({ tampered: true, output: stderr, videoHash });
-      }
-      res.json({ tampered: false, output: stdout, videoHash });
+      // Exit code 0 = authentic, 1 = tampered/not found, other = error
+      const exitCode = error ? error.code : 0;
+      const tampered = exitCode !== 0;
+      
+      console.log("Verify exit code:", exitCode);
+      console.log("Output:", stdout);
+      if (stderr) console.error("Stderr:", stderr);
+      
+      res.json({ tampered, output: stdout || stderr, videoHash });
     });
   } catch (error) {
     console.error("Verify error:", error);
@@ -148,7 +152,7 @@ app.get("/health", (req, res) => {
 
 const PORT = 5001;
 app.listen(PORT, "0.0.0.0", () => {
-  console.log("✅ Backend running on http://0.0.0.0:5001");
-  console.log(`✅ Access locally: http://localhost:${PORT}`);
-  console.log(`✅ Access from network: http://192.168.1.24:${PORT}`);
+  console.log(" Backend running on http://0.0.0.0:5001");
+  console.log(` Access locally: http://localhost:${PORT}`);
+  console.log(` Access from network: http://192.168.1.24:${PORT}`);
 });

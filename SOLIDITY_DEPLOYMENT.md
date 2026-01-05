@@ -1,6 +1,6 @@
 # 🚀 Solidity EvidenceChain Deployment
 
-## ✅ Deployment Status: SUCCESS
+##  Deployment Status: SUCCESS
 
 ### Deployment Information
 - **Contract Name:** EvidenceChain
@@ -108,7 +108,7 @@ const evidence = await contract.methods.getEvidence("EV-001").call();
 - **Artifacts Location:** `./build/contracts/EvidenceChain.json`
 
 ## ✨ Status
-✅ Contract compiled successfully
-✅ Contract deployed to Ganache
-✅ All functions tested
-✅ Ready for integration with frontend/backend
+ Contract compiled successfully
+ Contract deployed to Ganache
+ All functions tested
+ Ready for integration with frontend/backend

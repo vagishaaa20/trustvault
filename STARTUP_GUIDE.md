@@ -21,7 +21,7 @@ Ganache CLI v7.x.x
 ...
 Listening on 0.0.0.0:8545
 ```
-✅ **Ganache is running** - Keep this terminal open
+ **Ganache is running** - Keep this terminal open
 
 ---
 
@@ -38,7 +38,7 @@ Migrations complete! Summary:
 > Total deployments:   1
 > Final cost:          0.00X ETH
 ```
-✅ **Contract deployed** - You can close this terminal after deployment completes
+ **Contract deployed** - You can close this terminal after deployment completes
 
 ---
 
@@ -49,10 +49,10 @@ npm start
 ```
 **Expected output:**
 ```
-✅ Backend running on http://0.0.0.0:5001
-✅ Access locally: http://localhost:5001
+ Backend running on http://0.0.0.0:5001
+ Access locally: http://localhost:5001
 ```
-✅ **Backend is running** - Keep this terminal open
+ **Backend is running** - Keep this terminal open
 
 ---
 
@@ -67,7 +67,7 @@ Compiled successfully!
 You can now view Ranchihacks in the browser.
 Local:            http://localhost:3000
 ```
-✅ **Frontend is running** - Browser should open automatically at http://localhost:3000
+ **Frontend is running** - Browser should open automatically at http://localhost:3000
 
 ---
 
