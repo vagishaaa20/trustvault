@@ -63,7 +63,7 @@ def verify(evidence_id, video_path):
         print("===========================================")
         return False
 
-    print("📦 Stored Hash    :", stored_hash)
+    print("Stored Hash    :", stored_hash)
     print("-------------------------------------------")
 
     # 5️⃣ Compare hashes

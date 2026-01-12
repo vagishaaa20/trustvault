@@ -5,6 +5,8 @@ const { exec } = require("child_process");
 const path = require("path");
 const fs = require("fs");
 const crypto = require("crypto");
+const pool = require("./db");
+
 
 const app = express();
 app.use(cors());
@@ -49,6 +51,12 @@ app.post("/upload", upload.single("video"), async (req, res) => {
   try {
     // Generate hash for the uploaded video
     const videoHash = await generateVideoHash(videoPath);
+
+  await pool.query(
+  "INSERT INTO evidence_metadata (case_id, evidence_id) VALUES ($1, $2)",
+  [caseId, evidenceId]
+  );
+
 
     const pythonExe = "python";
     const scriptPath = path.join(__dirname, "..", "insert.py");
