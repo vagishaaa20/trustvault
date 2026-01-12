@@ -68,13 +68,23 @@ app.post("/upload", upload.single("video"), async (req, res) => {
     // Generate hash for the uploaded video
     const videoHash = await generateVideoHash(videoPath);
 
+  try {
   await pool.query(
-  `INSERT INTO evidence_metadata (case_id, evidence_id, file_path)
-   VALUES ($1, $2, $3)`,
-  [caseId, evidenceId, videoPath]
-);
-
-
+    `INSERT INTO evidence_metadata 
+     (case_id, evidence_id, file_path, file_hash)
+     VALUES ($1, $2, $3, $4)`,
+    [caseId, evidenceId, videoPath, videoHash]
+  );
+} catch (err) {
+  // 23505 = unique constraint violation
+  if (err.code === "23505") {
+    return res.status(400).json({
+      success: false,
+      message: "This evidence has already been uploaded"
+    });
+  }
+  throw err;
+}
 
     const pythonExe = "python";
     const scriptPath = path.join(__dirname, "..", "insert.py");
@@ -84,12 +94,33 @@ app.post("/upload", upload.single("video"), async (req, res) => {
     console.log("Executing upload command:", cmd);
 
     exec(cmd, { maxBuffer: 1024 * 1024 * 10 }, (error, stdout, stderr) => {
-      if (error && error.code !== 0) {
-        console.error("Upload error:", stderr || error.message);
-        return res.status(400).json({ error: stderr || error.message, success: false });
-      }
-      res.json({ success: true, output: stdout, videoHash });
+  const output = `${stdout}\n${stderr}`;
+
+  // ✅ BLOCKCHAIN DUPLICATE (from insert.py)
+  if (output.includes("BLOCKCHAIN_DUPLICATE")) {
+    return res.status(409).json({
+      success: false,
+      message: "Evidence already exists in blockchain",
     });
+  }
+
+  // ❌ Real blockchain / python failure
+  if (error) {
+    console.error("Blockchain error:", output);
+    return res.status(500).json({
+      success: false,
+      message: "Blockchain transaction failed",
+    });
+  }
+
+  // ✅ SUCCESS
+  res.json({
+    success: true,
+    output: stdout,
+    videoHash,
+  });
+});
+
   } catch (error) {
     console.error("Upload error:", error);
     res.status(500).json({ error: error.message, success: false });

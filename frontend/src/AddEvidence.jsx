@@ -10,79 +10,65 @@ const AddEvidence = () => {
   const [videoHash, setVideoHash] = useState("");
 
   const uploadEvidence = async () => {
-    if (!caseId || !evidenceId || !video) {
-      alert("Please fill in all fields");
-      return;
+  if (!caseId || !evidenceId || !video) {
+    alert("Please fill in all fields");
+    return;
+  }
+
+  setLoading(true);
+  setUploadResult(null);
+  setVideoHash("");
+
+  const formData = new FormData();
+  formData.append("caseId", caseId);
+  formData.append("evidenceId", evidenceId);
+  formData.append("video", video);
+
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 60000);
+
+    // ✅ DECLARE res ONCE
+    const res = await fetch("http://localhost:5001/upload", {
+      method: "POST",
+      body: formData,
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeoutId);
+
+    // ✅ DECLARE data ONCE
+    const data = await res.json();
+
+    // ✅ USE BACKEND MESSAGE
+    if (!res.ok) {
+      throw new Error(data.message || "Upload failed");
     }
 
-    setLoading(true);
-    setUploadResult(null);
-    setVideoHash("");
+    // ✅ SUCCESS
+    setVideoHash(data.videoHash || "");
+    setUploadResult({
+      type: "success",
+      message: "Evidence uploaded successfully",
+      output: data.output || "",
+    });
 
-    const formData = new FormData();
-    formData.append("caseId", caseId);
-    formData.append("evidenceId", evidenceId);
-    formData.append("video", video);
+    setCaseId("");
+    setEvidenceId("");
+    setVideo(null);
 
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 60000); // 60 second timeout
+  } catch (error) {
+    console.error("Upload error:", error);
 
-      const res = await fetch("http://localhost:5001/upload", {
-        method: "POST",
-        body: formData,
-        signal: controller.signal,
-      });
-
-      clearTimeout(timeoutId);
-
-      if (!res.ok) {
-        throw new Error(`Server error: ${res.status} ${res.statusText}`);
-      }
-
-      const data = await res.json();
-
-      if (data.success) {
-        if (data.videoHash) {
-          setVideoHash(data.videoHash);
-        }
-        setUploadResult({
-          type: "success",
-          message: "evidence uploaded",
-          output: data.output,
-        });
-        // Clear form
-        setCaseId("");
-        setEvidenceId("");
-        setVideo(null);
-      } else {
-        setUploadResult({
-          type: "error",
-          message: "Upload failed",
-          output: data.error || "Unknown error occurred",
-        });
-      }
-    } catch (error) {
-      console.error("Upload error:", error);
-      let errorMessage = error.message;
-      
-      if (error.name === "AbortError") {
-        errorMessage = "Request timeout - the upload took too long";
-      } else if (!navigator.onLine) {
-        errorMessage = "Network is offline";
-      } else if (error.message.includes("Failed to fetch")) {
-        errorMessage = "Failed to connect to backend server. Make sure http://localhost:5001 is accessible";
-      }
-
-      setUploadResult({
-        type: "error",
-        message: "Upload error",
-        output: errorMessage,
-      });
-    } finally {
-      setLoading(false);
-    }
-  };
+    setUploadResult({
+      type: "error",
+      message: "Upload failed",
+      output: error.message,
+    });
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <div className="add-evidence-container">

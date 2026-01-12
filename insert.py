@@ -1,6 +1,7 @@
 import os
 import json
 import hashlib
+import sys
 from datetime import datetime, timezone
 from web3 import Web3
 
@@ -98,10 +99,11 @@ def insert(case_id, evidence_id, video_path):
             print(" This evidence ID has already been recorded on the blockchain")
             print(" Tip: Use a unique evidence ID or verify existing evidence instead")
             print("========================================")
-            raise Exception(f" Duplicate Evidence: This evidence ID already exists on blockchain. Use a different evidence ID.")
-        else:
-            raise
+            print("BLOCKCHAIN_DUPLICATE: Evidence already exists")
+    sys.exit(2)   # controlled exit, NOT a crash
 
+    print("BLOCKCHAIN_ERROR:", error_msg)
+    sys.exit(1)
 
 # -------- CLI SUPPORT (IMPORTANT) --------
 if __name__ == "__main__":
