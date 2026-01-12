@@ -7,12 +7,22 @@ const fs = require("fs");
 const crypto = require("crypto");
 const pool = require("./db");
 
+const renameUploadedFile = (oldPath, caseId, evidenceId, originalName) => {
+  const ext = path.extname(originalName) || ".mp4";
+  const newFileName = `${caseId}_${evidenceId}${ext}`;
+  const newPath = path.join("uploads", newFileName);
+
+  fs.renameSync(oldPath, newPath);
+  return newPath;
+};
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.use("/uploads", express.static("uploads"));
 
 const upload = multer({ dest: "uploads/" });
+
 
 /* ---------- GENERATE VIDEO HASH ---------- */
 const generateVideoHash = (filePath) => {
@@ -46,16 +56,24 @@ app.post("/upload", upload.single("video"), async (req, res) => {
     return res.status(400).json({ error: "Missing caseId or evidenceId", success: false });
   }
 
-  const videoPath = req.file.path;
+  const videoPath = renameUploadedFile(
+  req.file.path,
+  caseId,
+  evidenceId,
+  req.file.originalname
+);
+
 
   try {
     // Generate hash for the uploaded video
     const videoHash = await generateVideoHash(videoPath);
 
   await pool.query(
-  "INSERT INTO evidence_metadata (case_id, evidence_id) VALUES ($1, $2)",
-  [caseId, evidenceId]
-  );
+  `INSERT INTO evidence_metadata (case_id, evidence_id, file_path)
+   VALUES ($1, $2, $3)`,
+  [caseId, evidenceId, videoPath]
+);
+
 
 
     const pythonExe = "python";
@@ -158,9 +176,25 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok", message: "Backend is running" });
 });
 
+//show video in view records
+app.get("/records", async (req, res) => {
+  try {
+    const result = await pool.query(
+      "SELECT case_id, evidence_id, file_path FROM evidence_metadata ORDER BY created_at DESC"
+    );
+    res.json(result.rows);
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ error: "Failed to fetch records" });
+  }
+});
+
+
+
 const PORT = 5001;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(" Backend running on http://0.0.0.0:5001");
   console.log(` Access locally: http://localhost:${PORT}`);
   console.log(` Access from network: http://192.168.1.24:${PORT}`);
 });
+
