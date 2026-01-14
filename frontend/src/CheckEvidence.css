@@ -2,7 +2,7 @@
 
 .check-evidence-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   padding: 20px;
   display: flex;
   align-items: flex-start;
@@ -11,25 +11,25 @@
 }
 
 .check-evidence-card {
-  background: white;
+  background: #1a1a1a;
   border-radius: 8px;
   padding: 30px;
   max-width: 600px;
   width: 100%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
 }
 
 .check-evidence-card h1 {
   margin: 0 0 8px 0;
   font-size: 28px;
-  color: #333;
+  color: #ffffff;
   font-weight: 600;
 }
 
 .check-evidence-card .subtitle {
   margin: 0 0 24px 0;
-  color: #666;
+  color: #b0b0b0;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -44,25 +44,25 @@
 .search-input {
   flex: 1;
   padding: 10px 12px;
-  border: 1px solid #ddd;
+  border: 1px solid #333;
   border-radius: 4px;
   font-size: 14px;
-  background: #f9f9f9;
-  color: #333;
+  background: #2a2a2a;
+  color: #ffffff;
   transition: all 0.2s ease;
 }
 
 .search-input:focus {
   outline: none;
-  background: white;
-  border-color: #999;
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+  background: #2a2a2a;
+  border-color: #555;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
 }
 
 .btn-refresh {
   padding: 10px 16px;
-  background: #555;
-  color: white;
+  background: #ffffff;
+  color: #0a0a0a;
   border: none;
   border-radius: 4px;
   font-size: 14px;
@@ -72,7 +72,7 @@
 }
 
 .btn-refresh:hover {
-  background: #333;
+  background: #b0b0b0;
 }
 
 /* Status Messages */
@@ -87,20 +87,20 @@
 }
 
 .status-loading {
-  background: #f0f0f0;
-  color: #666;
+  background: #2a2a2a;
+  color: #b0b0b0;
 }
 
 .status-error {
-  background: #fef2f2;
-  color: #c00;
-  border: 1px solid #fcc;
+  background: #3a1a1a;
+  color: #ff6b6b;
+  border: 1px solid #663333;
 }
 
 .status-empty {
-  background: #f5f5f5;
-  color: #999;
-  border: 1px solid #e0e0e0;
+  background: #2a2a2a;
+  color: #888;
+  border: 1px solid #333;
 }
 
 /* Records */
@@ -110,14 +110,14 @@
 
 .record-count {
   font-size: 13px;
-  color: #666;
+  color: #b0b0b0;
   margin: 0 0 15px 0;
   font-weight: 500;
 }
 
 .evidence-record {
-  background: #fafafa;
-  border: 1px solid #e0e0e0;
+  background: #2a2a2a;
+  border: 1px solid #333;
   border-radius: 4px;
   padding: 16px;
   margin-bottom: 12px;
@@ -125,8 +125,8 @@
 }
 
 .evidence-record:hover {
-  background: white;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background: #333;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.08);
 }
 
 /* Record Header */
@@ -136,21 +136,21 @@
   align-items: center;
   margin-bottom: 12px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #444;
 }
 
 .record-number {
   font-size: 12px;
   font-weight: 600;
-  color: #777;
-  background: #eee;
+  color: #0a0a0a;
+  background: #888;
   padding: 4px 8px;
   border-radius: 3px;
 }
 
 .record-block {
   font-size: 12px;
-  color: #999;
+  color: #888;
 }
 
 /* Record Grid */
@@ -170,20 +170,20 @@
 .record-item .label {
   font-size: 12px;
   font-weight: 500;
-  color: #888;
+  color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .record-item .value {
   font-size: 13px;
-  color: #333;
+  color: #ffffff;
   word-break: break-word;
 }
 
 .record-item .value.text-small {
   font-size: 12px;
-  color: #666;
+  color: #b0b0b0;
 }
 
 .record-item .value.mono {
@@ -198,7 +198,7 @@
 .record-hash .label {
   font-size: 12px;
   font-weight: 500;
-  color: #888;
+  color: #666;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 6px;
@@ -209,8 +209,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: white;
-  border: 1px solid #ddd;
+  background: #1a1a1a;
+  border: 1px solid #333;
   border-radius: 3px;
   padding: 8px 10px;
 }
@@ -219,7 +219,7 @@
   flex: 1;
   font-family: "Monaco", "Courier New", monospace;
   font-size: 11px;
-  color: #555;
+  color: #888;
   word-break: break-all;
   background: transparent;
 }

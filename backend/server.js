@@ -109,7 +109,7 @@ app.post("/upload", upload.single("video"), async (req, res) => {
     console.error("Blockchain error:", output);
     return res.status(500).json({
       success: false,
-      message: "Blockchain transaction failed",
+      message: "Blockchain transaction failed: " + (stderr || error.message),
     });
   }
 

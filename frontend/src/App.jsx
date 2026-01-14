@@ -7,6 +7,7 @@ import AddEvidence from "./AddEvidence";
 import VerifyEvidence from "./VerifyEvidence";
 import ViewEvidence from "./ViewEvidence";
 import SideBySide from "./SideBySide";
+import DeepfakeDetection from "./DeepfakeDetection";
 
 const App = () => {
   return (
@@ -25,6 +26,9 @@ const App = () => {
         <Route path="/add-evidence" element={<AddEvidence />} />
         <Route path="/verify-evidence" element={<VerifyEvidence />} />
         <Route path="/view-evidence" element={<ViewEvidence />} />
+        
+        {/* Deepfake Detection */}
+        <Route path="/deepfake-detection" element={<DeepfakeDetection />} />
         
         {/* Side by Side - Add & Check Evidence */}
         <Route path="/dashboard" element={<SideBySide />} />

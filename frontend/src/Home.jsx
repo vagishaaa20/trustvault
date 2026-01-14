@@ -42,11 +42,11 @@ const Home = () => {
           </button>
 
           <button
-            onClick={() => navigate("/view-evidence")}
+            onClick={() => navigate("/deepfake-detection")}
             className="nav-btn"
           >
-            <span className="label">view Records</span>
-            <span className="desc">browse all evidence</span>
+            <span className="label">Deepfake Detection</span>
+            <span className="desc">analyze video authenticity</span>
           </button>
         </div>
       </div>

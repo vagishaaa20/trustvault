@@ -2,7 +2,7 @@
 
 .sidebyside-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f0f0f0 0%, #e5e5e5 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   padding: 10px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .left-panel {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #333;
 }
 
 /* Scrollbar styling */
@@ -38,12 +38,12 @@
 }
 
 .panel::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: #555;
   border-radius: 3px;
 }
 
 .panel::-webkit-scrollbar-thumb:hover {
-  background: #999;
+  background: #777;
 }
 
 /* Mobile responsive - stack vertically */
@@ -55,7 +55,7 @@
 
   .left-panel {
     border-right: none;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #333;
     max-height: none;
   }
 
