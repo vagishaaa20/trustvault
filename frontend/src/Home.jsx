@@ -21,8 +21,8 @@ const Home = () => {
             onClick={() => navigate("/approach")}
             className="nav-btn"
           >
-            <span className="label">Approach</span>
-            <span className="desc">our methodology </span>
+            <span className="label">View Records</span>
+            <span className="desc"> Evidence Details </span>
           </button>
 
           <button

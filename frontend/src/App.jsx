@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         
         {/* Approach */}
-        <Route path="/approach" element={<Approach />} />
+        <Route path="/approach" element={<ViewEvidence />} />
 
         {/* Evidence Chain of Custody */}
         <Route path="/add-evidence" element={<AddEvidence />} />
