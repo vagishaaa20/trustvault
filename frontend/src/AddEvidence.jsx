@@ -73,9 +73,9 @@ const AddEvidence = () => {
   return (
     <div className="add-evidence-container">
       <div className="add-evidence-card">
-        <h1 style={{  fontFamily: "Helvetica"}}>Add Evidence</h1>
+        <h1 >Add Evidence</h1>
 
-        <div className="form-group" style={{  fontFamily: "Helvetica"}} >
+        <div className="form-group"  >
           <label htmlFor="case-id">Case ID (UUID):</label>
           <input
             id="case-id"
@@ -86,7 +86,7 @@ const AddEvidence = () => {
           />
         </div>
 
-        <div className="form-group" style={{  fontFamily: "Helvetica"}}>
+        <div className="form-group" >
           <label htmlFor="evidence-id">Evidence ID:</label>
           <input
             id="evidence-id"
@@ -97,7 +97,7 @@ const AddEvidence = () => {
           />
         </div>
 
-        <div className="form-group" style={{  fontFamily: "Helvetica"}}>
+        <div className="form-group" >
           <label htmlFor="video-upload">Upload Video:</label>
           <input
             id="video-upload"

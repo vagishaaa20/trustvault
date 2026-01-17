@@ -1,0 +1,90 @@
+.deepfake-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.deepfake-header {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.deepfake-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.deepfake-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #b0b0b0;
+}
+
+.streamlit-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 900px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.streamlit-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.error-message {
+  background: #1a1a1a;
+  color: #b0b0b0;
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+}
+
+.error-message h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.error-message p {
+  color: #999;
+  margin: 15px 0;
+  line-height: 1.6;
+}
+
+.error-message code {
+  background-color: #2a2a2a !important;
+  padding: 12px 15px !important;
+  border-radius: 5px !important;
+  font-family: "Courier New", monospace !important;
+  color: #ffffff !important;
+  overflow-x: auto !important;
+  display: block !important;
+  margin-top: 15px !important;
+  border-left: 4px solid #ffffff !important;
+}
+
+.loading {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 50px;
+}

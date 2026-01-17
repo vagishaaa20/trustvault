@@ -1,70 +1,64 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./CheckEvidence.css";
 
 const CheckEvidence = () => {
   const [records, setRecords] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
   const [filter, setFilter] = useState("");
 
   useEffect(() => {
-    fetchEvidence();
+    fetchRecords();
   }, []);
 
-  const fetchEvidence = async () => {
+  const fetchRecords = async () => {
     setLoading(true);
-    setError(null);
+    setError("");
 
     try {
-      const res = await fetch("http://localhost:5001/evidence");
+      const res = await fetch("http://localhost:5001/records");
       const data = await res.json();
-
-      if (data.success && data.records) {
-        setRecords(data.records);
-      } else {
-        setRecords([]);
-      }
+      setRecords(data);
     } catch (err) {
-      setError("Failed to fetch evidence. Make sure backend is running.");
-      setRecords([]);
+      console.error(err);
+      setError("Failed to load evidence records");
     } finally {
       setLoading(false);
     }
   };
 
   const filteredRecords = records.filter((record) => {
-    if (filter === "") return true;
-    
-    const filterLower = filter.toLowerCase();
-    const caseIdMatch = record.case_id?.toLowerCase().includes(filterLower) || false;
-    const evidenceIdMatch = record.evidence_id?.toLowerCase().includes(filterLower) || false;
-    const hashMatch = record.hash?.toLowerCase().includes(filterLower) || false;
-    
-    return caseIdMatch || evidenceIdMatch || hashMatch;
+    if (!filter) return true;
+
+    const q = filter.toLowerCase();
+    return (
+      record.case_id?.toLowerCase().includes(q) ||
+      record.evidence_id?.toLowerCase().includes(q) ||
+      record.file_path?.toLowerCase().includes(q)
+    );
   });
 
   return (
     <div className="check-evidence-container">
       <div className="check-evidence-card">
         <h1>Evidence Database</h1>
-        <p className="subtitle">View all stored evidence on blockchain</p>
+        <p className="subtitle">Stored evidence metadata (database)</p>
 
         <div className="controls">
           <input
             type="text"
-            placeholder="Search by Case ID, Evidence ID, or Hash..."
+            placeholder="Search by Case ID, Evidence ID, or File Path"
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
             className="search-input"
           />
-          <button onClick={fetchEvidence} className="btn-refresh">
+          <button onClick={fetchRecords} className="btn-refresh">
             Refresh
           </button>
         </div>
 
-        {loading && <p className="status-loading">Loading evidence...</p>}
-
-        {error && <p className="status-error">Error: {error}</p>}
+        {loading && <p className="status-loading">Loading records...</p>}
+        {error && <p className="status-error">{error}</p>}
 
         {!loading && !error && filteredRecords.length === 0 && (
           <p className="status-empty">No evidence records found</p>
@@ -78,11 +72,6 @@ const CheckEvidence = () => {
 
             {filteredRecords.map((record, index) => (
               <div key={index} className="evidence-record">
-                <div className="record-header">
-                  <span className="record-number">#{record.number}</span>
-                  <span className="record-block">Block {record.block_number}</span>
-                </div>
-
                 <div className="record-grid">
                   <div className="record-item">
                     <span className="label">Case ID</span>
@@ -95,37 +84,9 @@ const CheckEvidence = () => {
                   </div>
                 </div>
 
-                <div className="record-hash">
-                  <span className="label">Hash (SHA-256)</span>
-                  <div className="hash-display">
-                    <code>{record.hash}</code>
-                    <button
-                      onClick={() => {
-                        navigator.clipboard.writeText(record.hash);
-                        alert("Hash copied!");
-                      }}
-                      className="btn-copy-small"
-                      title="Copy hash"
-                    >
-                      Copy
-                    </button>
-                  </div>
-                </div>
-
-                <div className="record-grid">
-                  <div className="record-item">
-                    <span className="label">Timestamp</span>
-                    <span className="value text-small">
-                      {new Date(record.datetime).toLocaleString()}
-                    </span>
-                  </div>
-
-                  <div className="record-item">
-                    <span className="label">Transaction</span>
-                    <span className="value text-small mono">
-                      {record.transaction.substring(0, 10)}...
-                    </span>
-                  </div>
+                <div className="record-item">
+                  <span className="label">Stored File Path</span>
+                  <span className="value mono">{record.file_path}</span>
                 </div>
               </div>
             ))}
