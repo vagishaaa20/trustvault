@@ -20,7 +20,9 @@ const ViewRecords = () => {
   }, []);
 
   if (loading) {
-    return <p style={{ textAlign: "center", color: "#ffffff", background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>Loading records...</p>;
+    return (
+      <p style={styles.centerText}>Loading records...</p>
+    );
   }
 
   if (error) {
@@ -28,7 +30,9 @@ const ViewRecords = () => {
   }
 
   if (records.length === 0) {
-    return <p style={{ textAlign: "center", color: "#ffffff", background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>No evidence records found.</p>;
+    return (
+      <p style={styles.centerText}>No evidence records found.</p>
+    );
   }
 
   return (
@@ -38,17 +42,48 @@ const ViewRecords = () => {
       {records.map((record, index) => {
         const videoUrl = `http://localhost:5001/${record.file_path}`;
 
+        const prediction = record.prediction || "PENDING";
+        const probability =
+          record.avg_probability !== null
+            ? (record.avg_probability * 100).toFixed(2) + "%"
+            : "—";
+
+        const analyzedAt = record.deepfake_analyzed_at
+          ? new Date(record.deepfake_analyzed_at).toLocaleString()
+          : "Not analyzed yet";
+
         return (
           <div key={index} style={styles.card}>
-            <p style={{ color: "#ffffff" }}>
-              <strong>Case ID:</strong> {record.case_id}
-            </p>
-            <p style={{ color: "#ffffff" }}>
-              <strong>Evidence ID:</strong> {record.evidence_id}
-            </p>
-            <p style={{ color: "#ffffff" }}>
-              <strong>File Path:</strong> {record.file_path}
-            </p>
+            <p><strong>Case ID:</strong> {record.case_id}</p>
+            <p><strong>Evidence ID:</strong> {record.evidence_id}</p>
+            <p><strong>File Path:</strong> {record.file_path}</p>
+
+            {/* 🔍 Deepfake Info */}
+            <div style={styles.analysisBox}>
+              <p>
+                <strong>Deepfake Result:</strong>{" "}
+                <span
+                  style={{
+                    color:
+                      prediction === "FAKE"
+                        ? "#ff6b6b"
+                        : prediction === "REAL"
+                        ? "#34d399"
+                        : "#fbbf24",
+                  }}
+                >
+                  {prediction}
+                </span>
+              </p>
+
+              <p>
+                <strong>Average Probability:</strong> {probability}
+              </p>
+
+              <p>
+                <strong>Analyzed At:</strong> {analyzedAt}
+              </p>
+            </div>
 
             <video controls style={styles.video}>
               <source src={videoUrl} type="video/mp4" />
@@ -69,6 +104,15 @@ const styles = {
     fontFamily: "Arial, sans-serif",
     color: "#ffffff",
   },
+  centerText: {
+    textAlign: "center",
+    color: "#ffffff",
+    background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)",
+    minHeight: "100vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   card: {
     background: "#1a1a1a",
     padding: "16px",
@@ -76,6 +120,14 @@ const styles = {
     borderRadius: "8px",
     border: "1px solid #ffffff",
     boxShadow: "0 2px 6px rgba(255,255,255,0.1)",
+  },
+  analysisBox: {
+    marginTop: "10px",
+    marginBottom: "10px",
+    padding: "10px",
+    borderRadius: "6px",
+    background: "#0f172a",
+    border: "1px solid #334155",
   },
   video: {
     width: "100%",
