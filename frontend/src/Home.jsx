@@ -10,7 +10,6 @@ import {
   Lock,
   Activity
 } from "lucide-react";
-import "./Home.css";
 
 /* Cards data */
 const cards = [
@@ -72,7 +71,7 @@ const Home = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="status-pill">● System Operational</span>
+          <span className="status-pill">System Operational</span>
           <h1 className="hero-title">
            Chain of Custody System
           </h1>
