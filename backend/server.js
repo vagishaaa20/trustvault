@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
@@ -6,6 +7,7 @@ const path = require("path");
 const fs = require("fs");
 const crypto = require("crypto");
 const pool = require("./db");
+
 
 const renameUploadedFile = (oldPath, caseId, evidenceId, originalName) => {
   const ext = path.extname(originalName) || ".mp4";
@@ -86,7 +88,8 @@ app.post("/upload", upload.single("video"), async (req, res) => {
   throw err;
 }
 
-    const pythonExe = "python";
+    const pythonExe = process.env.PYTHON_PATH || "python";
+
     const scriptPath = path.join(__dirname, "..", "insert.py");
     const quoted = (s) => `"${s.replace(/"/g, '\\"')}"`;
     const cmd = `${quoted(pythonExe)} ${quoted(scriptPath)} ${quoted(caseId)} ${quoted(evidenceId)} ${quoted(videoPath)}`;

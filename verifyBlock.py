@@ -3,15 +3,13 @@ import json
 import hashlib
 from datetime import datetime, timezone
 from web3 import Web3
+from web3.middleware import geth_poa_middleware
 
-# ---------------- CONFIG ---------------- #
-
-GANACHE_URL = "http://127.0.0.1:7545"
+POLYGON_RPC = "https://rpc-amoy.polygon.technology/"
 CONTRACT_ADDRESS = "0x05eea1F3E401B42f83D73E7c07951E23466DCDf5"
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ABI_PATH = os.path.join(BASE_DIR, "compiled_code.json")
-
-# --------------------------------------- #
 
 def generate_video_hash(file_path):
     sha256 = hashlib.sha256()
@@ -20,80 +18,51 @@ def generate_video_hash(file_path):
             sha256.update(chunk)
     return sha256.hexdigest()
 
-
 def verify(evidence_id, video_path):
-
     if not os.path.exists(video_path):
         raise Exception("Video file not found")
 
     print("========== EVIDENCE VERIFICATION ==========")
 
-    # 1️⃣ Recalculate hash from uploaded video
     new_hash = generate_video_hash(video_path)
-    verify_time = datetime.now(timezone.utc).isoformat()
 
     print(" Evidence ID    :", evidence_id)
     print(" File Path      :", video_path)
     print(" Computed Hash  :", new_hash)
-    print(" Verification   :", verify_time)
     print("-------------------------------------------")
 
-    # 2️⃣ Connect to blockchain
-    web3 = Web3(Web3.HTTPProvider(GANACHE_URL))
+    web3 = Web3(Web3.HTTPProvider(POLYGON_RPC))
+    web3.middleware_onion.inject(geth_poa_middleware, layer=0)
+
     if not web3.is_connected():
-        raise Exception(" Blockchain not connected")
+        raise Exception("Polygon not connected")
 
     print(" Blockchain     : Connected")
 
-    # 3️⃣ Load ABI
     with open(ABI_PATH) as f:
-        compiled_data = json.load(f)
-        abi = compiled_data["abi"]
+        abi = json.load(f)["abi"]
 
     contract = web3.eth.contract(
-        address=CONTRACT_ADDRESS,
+        address=Web3.to_checksum_address(CONTRACT_ADDRESS),
         abi=abi
     )
 
-    # 4️⃣ Fetch stored hash from blockchain
     try:
         stored_hash = contract.functions.getEvidenceHash(evidence_id).call()
     except Exception:
         print(" Evidence not found on blockchain")
-        print("===========================================")
         return False
 
-    print("Stored Hash    :", stored_hash)
-    print("-------------------------------------------")
+    print(" Stored Hash    :", stored_hash)
 
-    # 5️⃣ Compare hashes
     if stored_hash == new_hash:
         print(" VERIFICATION RESULT : AUTHENTIC")
-        print("Status             : Evidence not tampered")
-        print("===========================================")
         return True
     else:
         print(" VERIFICATION RESULT : TAMPERED")
-        print(" Status              : Evidence modified")
-        print("===========================================")
         return False
 
-
-# -------- CLI SUPPORT (IMPORTANT) --------
 if __name__ == "__main__":
     import sys
-
-    if len(sys.argv) < 3:
-        print("Usage: verifyBlock.py <evidence_id> <video_path>")
-        exit(1)
-
-    evidence_id = sys.argv[1]
-    video_path = sys.argv[2]
-
-    result = verify(evidence_id, video_path)
-
-    # Exit code for backend logic
-    if result:
-        exit(0)   # AUTHENTIC
-    else:
-        exit(1)   # TAMPERED
+    result = verify(sys.argv[1], sys.argv[2])
+    exit(0 if result else 1)
