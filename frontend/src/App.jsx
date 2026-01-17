@@ -1,7 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Login from "./Login";
-import Home from "./Home";
-import Approach from "./Approach";
+//import Login from "./Login";
+//import Home from "./Home";
+import Home from "./pages/Home";
+import Login from "./pages/login";
+import Register from "./pages/Register";
+
 
 import AddEvidence from "./AddEvidence";
 import VerifyEvidence from "./VerifyEvidence";
@@ -13,11 +16,9 @@ const App = () => {
   return (
     <>
       <Routes>
-        {/* Home */}
         <Route path="/" element={<Home />} />
-        
-        {/* Login */}
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         
         {/* Approach */}
         <Route path="/approach" element={<ViewEvidence />} />
