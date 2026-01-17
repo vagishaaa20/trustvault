@@ -24,7 +24,7 @@ const Login = () => {
         body: JSON.stringify({
           email,
           password,
-          role,      // 🔐 send role to backend
+          role,      
           deviceId,
         }),
       });

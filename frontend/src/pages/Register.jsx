@@ -8,9 +8,10 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     setError("");
 
@@ -19,17 +20,40 @@ const Register = () => {
       return;
     }
 
-    // 🔐 Send role=user to backend
-    const payload = {
-      name,
-      email,
-      password,
-      role: "user",
-    };
+    setLoading(true);
 
-    console.log("Register payload:", payload);
+    try {
+      const res = await fetch("http://localhost:5000/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name,
+          email,
+          password,
+          role: "user",
+        }),
+      });
 
-    // TODO: API call
+      const data = await res.json();
+
+      if (!res.ok) {
+        setError(data.message || "Registration failed");
+        return;
+      }
+
+      // ✅ DEMO MODE: directly login user
+      localStorage.setItem(
+        "authUser",
+        JSON.stringify({ name, email, role: "user" })
+      );
+
+      navigate("/dashboard");
+
+    } catch {
+      setError("Server unavailable. Please try again.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -91,8 +115,8 @@ const Register = () => {
             />
           </div>
 
-          <button className="btn-primary" type="submit">
-            REGISTER
+          <button className="btn-primary" type="submit" disabled={loading}>
+            {loading ? "Creating Account..." : "REGISTER"}
           </button>
         </form>
 
