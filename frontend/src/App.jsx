@@ -1,7 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import Login from "./Login";
+//import Login from "./Login";
 import Home from "./Home";
-import Approach from "./Approach";
+import Landing from "./pages/Landing";
+import Login from "./pages/login";
+import Register from "./pages/Register";
+
 
 import AddEvidence from "./AddEvidence";
 import VerifyEvidence from "./VerifyEvidence";
@@ -13,11 +16,10 @@ const App = () => {
   return (
     <>
       <Routes>
-        {/* Home */}
-        <Route path="/" element={<Home />} />
-        
-        {/* Login */}
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         
         {/* Approach */}
         <Route path="/approach" element={<ViewEvidence />} />
@@ -32,6 +34,8 @@ const App = () => {
         
         {/* Side by Side - Add & Check Evidence */}
         <Route path="/dashboard" element={<SideBySide />} />
+        
+        
       </Routes>
     </>
   );
