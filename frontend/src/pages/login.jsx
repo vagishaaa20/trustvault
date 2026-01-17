@@ -24,7 +24,7 @@ const Login = () => {
         body: JSON.stringify({
           email,
           password,
-          role,      
+          role,
           deviceId,
         }),
       });
@@ -35,11 +35,7 @@ const Login = () => {
         setError(data.message || "Authentication failed");
         return;
       }
-
-      if (data.otpRequired) {
-        localStorage.setItem("tempToken", data.tempToken);
-        // navigate("/verify-otp");
-      }
+      navigate("/home");
     } catch {
       setError("Server unavailable. Please try again.");
     } finally {
@@ -124,6 +120,7 @@ const Login = () => {
         </form>
 
         <div className="auth-divider">OR</div>
+
         <button className="google-btn" disabled>
           <img
             src="https://developers.google.com/identity/images/g-logo.png"

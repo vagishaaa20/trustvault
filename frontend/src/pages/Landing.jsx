@@ -6,7 +6,7 @@ import Particles from "../components/Particles";
 import AshokaBackground from "../components/AshokaBackground";
 import TechStack from "../components/TechStack";
 
-const Home = () => {
+const Landing = () => {
   return (
     <>
       <Particles />
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Landing;

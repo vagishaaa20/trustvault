@@ -2,77 +2,75 @@ const Features = () => {
   return (
     <section className="features" id="features">
       <div className="section-header">
-        <h2 className="section-title">How TrustVault Works</h2>
-        <p className="section-subtitle">
-          A complete digital evidence platform that protects authenticity,
-          preserves integrity, and maintains trust from submission to verification.
-        </p>
+        <h2 className="section-title">Core Capabilities</h2>
       </div>
 
       <div className="features-grid">
         {/* 1 */}
         <div className="feature-card">
-          <span className="feature-icon">📁</span>
-          <h3 className="feature-title">Evidence Submission</h3>
+          <span className="feature-icon">⛓️</span>
+          <h3 className="feature-title">Blockchain-Secured Evidence Storage</h3>
           <p className="feature-desc">
-            Digital evidence is securely uploaded through a controlled workflow
-            that captures timestamps, file details, and contextual metadata at
-            the moment of submission.
+            Immutable digital evidence storage backed by blockchain technology.
+            Each file is cryptographically hashed, timestamped, and permanently
+            recorded to preserve integrity and legal admissibility.
           </p>
         </div>
 
         {/* 2 */}
         <div className="feature-card">
-          <span className="feature-icon">🔐</span>
-          <h3 className="feature-title">Integrity Protection</h3>
+          <span className="feature-icon">🔍</span>
+          <h3 className="feature-title">Evidence Integrity Verification</h3>
           <p className="feature-desc">
-            Once submitted, evidence is permanently protected against tampering.
-            Any modification attempt is detected and recorded, preserving the
-            original state of the file.
+            Multi-layer verification ensures evidence remains unaltered after
+            submission. Cryptographic validation and audit trails allow instant
+            integrity checks throughout the evidence lifecycle.
           </p>
         </div>
 
         {/* 3 */}
         <div className="feature-card">
-          <span className="feature-icon">🧠</span>
-          <h3 className="feature-title">Authenticity Analysis</h3>
+          <span className="feature-icon">🤖</span>
+          <h3 className="feature-title">
+            ML Anomaly Detection
+          </h3>
           <p className="feature-desc">
-            Automated analysis continuously checks evidence for manipulation,
-            inconsistencies, and synthetic alterations, helping establish
-            confidence in authenticity.
+            Machine learning models analyze images, videos, and audio to detect
+            deepfakes, synthetic content, and anomalous patterns. Supports
+            forensic analysis with confidence indicators.
           </p>
         </div>
 
         {/* 4 */}
         <div className="feature-card">
-          <span className="feature-icon">🕒</span>
-          <h3 className="feature-title">Chain of Custody</h3>
+          <span className="feature-icon">🛡️</span>
+          <h3 className="feature-title">Role-Based Secure Access</h3>
           <p className="feature-desc">
-            Every interaction with evidence is logged in a chronological trail,
-            creating a transparent history that can be reviewed, audited, and
-            presented when required.
+            The system enforces role-based authentication for users and
+            administrators. Access permissions, actions, and dashboards are
+            strictly separated to ensure controlled and accountable usage.
           </p>
         </div>
 
         {/* 5 */}
         <div className="feature-card feature-card-center">
-          <span className="feature-icon">🛂</span>
-          <h3 className="feature-title">Role-Based Access</h3>
+          <span className="feature-icon">📜</span>
+          <h3 className="feature-title">Chain of Custody & Audit Logs</h3>
           <p className="feature-desc">
-            Access to evidence is governed by defined roles and permissions,
-            ensuring only authorized users can view, verify, or manage sensitive
-            information.
+            Every interaction with evidence is automatically logged, including
+            uploads, access, verification, and system actions. A complete,
+            court-admissible audit trail is maintained.
           </p>
         </div>
 
         {/* 6 */}
         <div className="feature-card feature-card-center">
-          <span className="feature-icon">📊</span>
-          <h3 className="feature-title">Audit & Verification</h3>
+          <span className="feature-icon">📁</span>
+          <h3 className="feature-title">Evidence Lifecycle Management</h3>
           <p className="feature-desc">
-            Evidence status, verification results, and activity logs are clearly
-            presented, enabling quick reviews and confident decision-making
-            without manual inspection.
+            Manages the full lifecycle of digital evidence from submission and
+            verification to review and long-term archival, supporting
+            investigative and legal workflows.
           </p>
         </div>
       </div>

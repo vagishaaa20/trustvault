@@ -41,13 +41,12 @@ const Register = () => {
         return;
       }
 
-      // ✅ DEMO MODE: directly login user
       localStorage.setItem(
         "authUser",
         JSON.stringify({ name, email, role: "user" })
       );
 
-      navigate("/dashboard");
+      navigate("/home");
 
     } catch {
       setError("Server unavailable. Please try again.");

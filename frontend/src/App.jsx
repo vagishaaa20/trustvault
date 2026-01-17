@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 //import Login from "./Login";
-//import Home from "./Home";
-import Home from "./pages/Home";
+import Home from "./Home";
+import Landing from "./pages/Landing";
 import Login from "./pages/login";
 import Register from "./pages/Register";
 
@@ -16,7 +16,8 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         
