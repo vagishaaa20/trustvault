@@ -7,6 +7,32 @@ const fs = require("fs");
 const crypto = require("crypto");
 const pool = require("./db");
 
+// Load environment variables from .env file
+require("dotenv").config({ path: path.join(__dirname, ".env") });
+
+// User Activity Logging Routes
+const userActivityRoutes = require("./userActivityRoutes");
+
+// Blockchain event logging (optional - will gracefully fail if not configured)
+let blockchainRoutes = null;
+try {
+  blockchainRoutes = require("./blockchainRoutes");
+  
+  // Initialize blockchain if private key is available
+  const PRIVATE_KEY = process.env.PRIVATE_KEY;
+  if (PRIVATE_KEY && PRIVATE_KEY !== "0x0000000000000000000000000000000000000000000000000000000000000000") {
+    try {
+      blockchainRoutes.initBlockchain(PRIVATE_KEY);
+    } catch (initErr) {
+      console.warn("⚠️  Blockchain initialization failed:", initErr.message);
+    }
+  } else {
+    console.warn("⚠️  PRIVATE_KEY not set or is dummy value - blockchain features disabled");
+  }
+} catch (err) {
+  console.warn("⚠️  Blockchain routes not available:", err.message);
+}
+
 const renameUploadedFile = (oldPath, caseId, evidenceId, originalName) => {
   const ext = path.extname(originalName) || ".mp4";
   const newFileName = `${caseId}_${evidenceId}${ext}`;
@@ -48,6 +74,8 @@ const generateVideoHash = (filePath) => {
 app.post("/upload", upload.single("video"), async (req, res) => {
   const { caseId, evidenceId } = req.body;
   
+  console.log("Upload request received:", { caseId, evidenceId, file: req.file?.originalname });
+  
   if (!req.file) {
     return res.status(400).json({ error: "No video file provided", success: false });
   }
@@ -63,30 +91,27 @@ app.post("/upload", upload.single("video"), async (req, res) => {
   req.file.originalname
 );
 
-
   try {
     // Generate hash for the uploaded video
     const videoHash = await generateVideoHash(videoPath);
+    console.log("Video hash generated:", videoHash);
 
-  try {
-  await pool.query(
-    `INSERT INTO evidence_metadata 
-     (case_id, evidence_id, file_path, file_hash)
-     VALUES ($1, $2, $3, $4)`,
-    [caseId, evidenceId, videoPath, videoHash]
-  );
-} catch (err) {
-  // 23505 = unique constraint violation
-  if (err.code === "23505") {
-    return res.status(400).json({
-      success: false,
-      message: "This evidence has already been uploaded"
-    });
-  }
-  throw err;
-}
+    // Try to save to database (optional, don't fail if it doesn't work)
+    try {
+      const connection = await pool.getConnection();
+      await connection.query(
+        `INSERT INTO evidence_metadata 
+         (case_id, evidence_id, file_path, file_hash)
+         VALUES (?, ?, ?, ?)`,
+        [caseId, evidenceId, videoPath, videoHash]
+      );
+      connection.release();
+      console.log("Saved to database successfully");
+    } catch (dbErr) {
+      console.error("Database save failed (continuing anyway):", dbErr.message);
+    }
 
-    const pythonExe = "python";
+    const pythonExe = "/Users/shanawaz/Desktop/GDG FInal/trustvault/venv/bin/python3";
     const scriptPath = path.join(__dirname, "..", "insert.py");
     const quoted = (s) => `"${s.replace(/"/g, '\\"')}"`;
     const cmd = `${quoted(pythonExe)} ${quoted(scriptPath)} ${quoted(caseId)} ${quoted(evidenceId)} ${quoted(videoPath)}`;
@@ -95,6 +120,10 @@ app.post("/upload", upload.single("video"), async (req, res) => {
 
     exec(cmd, { maxBuffer: 1024 * 1024 * 10 }, (error, stdout, stderr) => {
   const output = `${stdout}\n${stderr}`;
+
+  console.log("Python stdout:", stdout);
+  console.log("Python stderr:", stderr);
+  console.log("Python error:", error);
 
   // ✅ BLOCKCHAIN DUPLICATE (from insert.py)
   if (output.includes("BLOCKCHAIN_DUPLICATE")) {
@@ -110,6 +139,7 @@ app.post("/upload", upload.single("video"), async (req, res) => {
     return res.status(500).json({
       success: false,
       message: "Blockchain transaction failed: " + (stderr || error.message),
+      details: output,
     });
   }
 
@@ -118,6 +148,7 @@ app.post("/upload", upload.single("video"), async (req, res) => {
     success: true,
     output: stdout,
     videoHash,
+    message: "Evidence uploaded successfully",
   });
 });
 
@@ -145,7 +176,7 @@ app.post("/verify", upload.single("video"), async (req, res) => {
     // Generate hash for the uploaded video
     const videoHash = await generateVideoHash(videoPath);
 
-    const pythonExe = "python";
+    const pythonExe = "/Users/shanawaz/Desktop/GDG FInal/trustvault/venv/bin/python3";
     const scriptPath = path.join(__dirname, "..", "verifyBlock.py");
     const quoted = (s) => `"${s.replace(/"/g, '\\"')}"`;
     const cmd = `${quoted(pythonExe)} ${quoted(scriptPath)} ${quoted(evidenceId)} ${quoted(videoPath)}`;
@@ -171,7 +202,7 @@ app.post("/verify", upload.single("video"), async (req, res) => {
 
 /* ---------- QUERY ALL EVIDENCE ---------- */
 app.get("/evidence", (req, res) => {
-  const pythonExe = "python";
+  const pythonExe = "/Users/shanawaz/Desktop/GDG FInal/trustvault/venv/bin/python3";
   const scriptPath = path.join(__dirname, "..", "queryEvidence.py");
   const quoted = (s) => `"${s.replace(/"/g, '\\"')}"`;
   const cmd = `${quoted(pythonExe)} ${quoted(scriptPath)}`;
@@ -210,22 +241,131 @@ app.get("/health", (req, res) => {
 //show video in view records
 app.get("/records", async (req, res) => {
   try {
-    const result = await pool.query(
+    const connection = await pool.getConnection();
+    const [result] = await connection.query(
       "SELECT case_id, evidence_id, file_path FROM evidence_metadata ORDER BY created_at DESC"
     );
-    res.json(result.rows);
+    connection.release();
+    res.json(result);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Failed to fetch records" });
   }
 });
 
+/* ========== BLOCKCHAIN EVENT LOGGING ROUTES ========== */
+if (blockchainRoutes) {
+  // Authentication & verification
+  app.post("/api/auth/verify", 
+    blockchainRoutes.verifyGoogleToken, 
+    blockchainRoutes.verifyTokenRoute
+  );
 
+  // Event logging endpoints
+  app.post("/api/blockchain/log-upload", 
+    blockchainRoutes.verifyGoogleToken, 
+    blockchainRoutes.logUploadRoute
+  );
+
+  app.post("/api/blockchain/log-view", 
+    blockchainRoutes.verifyGoogleToken, 
+    blockchainRoutes.logViewRoute
+  );
+
+  app.post("/api/blockchain/log-transfer", 
+    blockchainRoutes.verifyGoogleToken, 
+    blockchainRoutes.logTransferRoute
+  );
+
+  app.post("/api/blockchain/log-export", 
+    blockchainRoutes.verifyGoogleToken, 
+    blockchainRoutes.logExportRoute
+  );
+
+  // Event history endpoints
+  app.get("/api/blockchain/user-events", 
+    blockchainRoutes.verifyGoogleToken, 
+    blockchainRoutes.getUserEventsRoute
+  );
+
+  app.get("/api/blockchain/evidence-events/:evidenceId", 
+    blockchainRoutes.getEvidenceEventsRoute
+  );
+
+  console.log("✅ Blockchain event logging routes initialized");
+} else {
+  // Provide a fallback endpoint that explains blockchain is not configured
+  app.get("/api/blockchain/*", (req, res) => {
+    res.status(503).json({ 
+      error: "Blockchain event logging not configured",
+      message: "Please set up blockchainRoutes.js or configure blockchain connection"
+    });
+  });
+}
+
+/* ========== USER ACTIVITY LOGGING ROUTES ========== */
+try {
+  app.use(userActivityRoutes);
+  console.log("✅ User activity logging routes initialized");
+} catch (err) {
+  console.warn("⚠️  User activity routes failed:", err.message);
+}
+
+/* ========== AUTHENTICATION ROUTES ========== */
+// Simple login endpoint - stores email and creates user session
+app.post("/auth/login", express.json(), (req, res) => {
+  try {
+    const { email, password, role } = req.body;
+
+    // Basic validation
+    if (!email) {
+      return res.status(400).json({ 
+        success: false, 
+        message: "Email is required" 
+      });
+    }
+
+    // For demo purposes, accept any email/password combination
+    // In production, verify against database
+    
+    const token = `token_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    
+    res.json({
+      success: true,
+      message: "Login successful",
+      token: token,
+      email: email,
+      role: role || "user"
+    });
+    
+    console.log(`✅ User logged in: ${email} (${role || "user"})`);
+  } catch (error) {
+    console.error("❌ Login error:", error);
+    res.status(500).json({ 
+      success: false, 
+      message: "Login failed: " + error.message 
+    });
+  }
+});
+
+// Health check endpoint
+app.get("/health", (req, res) => {
+  res.json({ 
+    status: "ok", 
+    message: "Backend is running" 
+  });
+});
 
 const PORT = 5001;
 app.listen(PORT, "0.0.0.0", () => {
   console.log(" Backend running on http://0.0.0.0:5001");
   console.log(` Access locally: http://localhost:${PORT}`);
   console.log(` Access from network: http://192.168.1.24:${PORT}`);
+  console.log("");
+  console.log("📝 User Activity Logging Endpoints:");
+  console.log("   POST /api/user/log-activity - Log any activity");
+  console.log("   GET  /api/user/activity-history - Get user's history");
+  console.log("   GET  /api/user/activity-stats - Get activity statistics");
+  console.log("   GET  /api/user/activity-export - Export as CSV");
 });
 

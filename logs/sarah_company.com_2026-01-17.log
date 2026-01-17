@@ -1,0 +1,1 @@
+{"timestamp":"2026-01-17T09:15:35.565Z","date":"2026-01-17","action":"TEST_USER_LOGIN","details":{"userAgent":"curl/8.7.1","ipAddress":"127.0.0.1","route":"/api/user/log-activity","method":"POST","status":"success","email":"sarah@company.com","role":"user"}}

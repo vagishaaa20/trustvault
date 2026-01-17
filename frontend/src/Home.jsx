@@ -48,6 +48,14 @@ const Home = () => {
             <span className="label">Deepfake Detection</span>
             <span className="desc">analyze video authenticity</span>
           </button>
+
+          <button
+            onClick={() => navigate("/activity-log")}
+            className="nav-btn"
+          >
+            <span className="label">Activity Logs</span>
+            <span className="desc">view user activity history</span>
+          </button>
         </div>
       </div>
     </div>

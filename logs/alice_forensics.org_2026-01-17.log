@@ -1,0 +1,1 @@
+{"timestamp":"2026-01-17T09:15:49.307Z","date":"2026-01-17","action":"EVIDENCE_UPLOAD","details":{"userAgent":"curl/8.7.1","ipAddress":"127.0.0.1","route":"/api/user/log-activity","method":"POST","status":"success","fileName":"evidence.mp4","caseId":"CASE-2026-001"}}

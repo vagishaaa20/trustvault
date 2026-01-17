@@ -1,4 +1,5 @@
 import { useState } from "react";
+import tracker from "./ActivityTracker";
 import "./AddEvidence.css";
 
 const AddEvidence = () => {
@@ -12,6 +13,12 @@ const AddEvidence = () => {
   const uploadEvidence = async () => {
   if (!caseId || !evidenceId || !video) {
     alert("Please fill in all fields");
+    // Log failed attempt
+    tracker.logEvidenceAction("UPLOAD_FAILED", evidenceId || "unknown", {
+      reason: "Missing required fields",
+      caseId,
+      evidenceId,
+    });
     return;
   }
 
@@ -45,8 +52,16 @@ const AddEvidence = () => {
       throw new Error(data.message || "Upload failed");
     }
 
-    // ✅ SUCCESS
+    // ✅ SUCCESS - Log activity
     setVideoHash(data.videoHash || "");
+    tracker.logEvidenceAction("UPLOAD", evidenceId, {
+      fileName: video.name,
+      fileSize: video.size,
+      fileType: video.type,
+      caseId,
+      status: "success",
+    });
+    
     setUploadResult({
       type: "success",
       message: "Evidence uploaded successfully",
@@ -59,6 +74,14 @@ const AddEvidence = () => {
 
   } catch (error) {
     console.error("Upload error:", error);
+    
+    // Log error
+    tracker.logError("Upload failed", error.stack);
+    tracker.logEvidenceAction("UPLOAD_FAILED", evidenceId, {
+      fileName: video?.name,
+      errorMessage: error.message,
+      status: "error",
+    });
 
     setUploadResult({
       type: "error",
