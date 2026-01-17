@@ -4,12 +4,13 @@ import { useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
+  const [role, setRole] = useState("user"); // user | admin
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const deviceId = navigator.userAgent; 
+  const deviceId = navigator.userAgent;
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -19,12 +20,11 @@ const Login = () => {
     try {
       const res = await fetch("http://localhost:5000/auth/login", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email,
           password,
+          role,      // 🔐 send role to backend
           deviceId,
         }),
       });
@@ -33,16 +33,14 @@ const Login = () => {
 
       if (!res.ok) {
         setError(data.message || "Authentication failed");
-        setLoading(false);
         return;
       }
 
-      // OTP required (secure flow)
       if (data.otpRequired) {
         localStorage.setItem("tempToken", data.tempToken);
-        //navigate("/verify-otp");
+        // navigate("/verify-otp");
       }
-    } catch (err) {
+    } catch {
       setError("Server unavailable. Please try again.");
     } finally {
       setLoading(false);
@@ -50,14 +48,37 @@ const Login = () => {
   };
 
   return (
-    <div className="auth-page">
+    <div className={`auth-page ${role === "admin" ? "admin-mode" : ""}`}>
       <div className="auth-card">
-        <h2 className="auth-title">LOGIN</h2>
+        <h2 className="auth-title">
+          {role === "admin" ? "ADMIN LOGIN" : "LOGIN"}
+        </h2>
+
         <p className="auth-subtitle">
-          Tamper-Proof Digital Evidence Access
+          {role === "admin"
+            ? "Restricted Administrative Access"
+            : "Tamper-Proof Digital Evidence Access"}
         </p>
 
         {error && <div className="auth-error">{error}</div>}
+
+        {/* ROLE SELECTOR */}
+        <div className="role-selector">
+          <button
+            type="button"
+            className={role === "user" ? "active" : ""}
+            onClick={() => setRole("user")}
+          >
+            User
+          </button>
+          <button
+            type="button"
+            className={role === "admin" ? "active admin" : "admin"}
+            onClick={() => setRole("admin")}
+          >
+            Admin
+          </button>
+        </div>
 
         <form onSubmit={handleLogin}>
           <label>Email Address</label>
@@ -94,12 +115,15 @@ const Login = () => {
           </div>
 
           <button className="btn-primary" type="submit" disabled={loading}>
-            {loading ? "Authenticating..." : "LOGIN"}
+            {loading
+              ? "Authenticating..."
+              : role === "admin"
+              ? "ADMIN LOGIN"
+              : "LOGIN"}
           </button>
         </form>
 
         <div className="auth-divider">OR</div>
-
         <button className="google-btn" disabled>
           <img
             src="https://developers.google.com/identity/images/g-logo.png"
@@ -107,13 +131,15 @@ const Login = () => {
           />
         </button>
 
-        <p className="auth-footer">
-          Don’t have an account?{" "}
-          <span onClick={() => navigate("/register")}>Register</span>
-        </p>
+        {role === "user" && (
+          <p className="auth-footer">
+            Don’t have an account?{" "}
+            <span onClick={() => navigate("/register")}>Register</span>
+          </p>
+        )}
 
         <p className="legal-note">
-          🔐 All access attempts are logged and legally auditable
+          All access attempts are logged and legally auditable
         </p>
       </div>
     </div>
