@@ -2,48 +2,77 @@ const Features = () => {
   return (
     <section className="features" id="features">
       <div className="section-header">
-        <h2 className="section-title">Core Capabilities</h2>
+        <h2 className="section-title">How TrustVault Works</h2>
+        <p className="section-subtitle">
+          A complete digital evidence platform that protects authenticity,
+          preserves integrity, and maintains trust from submission to verification.
+        </p>
       </div>
 
       <div className="features-grid">
+        {/* 1 */}
         <div className="feature-card">
-          <span className="feature-icon">⛓️</span>
-          <h3 className="feature-title">Blockchain Storage</h3>
+          <span className="feature-icon">📁</span>
+          <h3 className="feature-title">Evidence Submission</h3>
           <p className="feature-desc">
-            Immutable evidence storage on distributed ledger technology. Every
-            piece of evidence is cryptographically signed and timestamped,
-            creating an unbreakable chain of custody that stands up in court.
+            Digital evidence is securely uploaded through a controlled workflow
+            that captures timestamps, file details, and contextual metadata at
+            the moment of submission.
           </p>
         </div>
 
+        {/* 2 */}
         <div className="feature-card">
-          <span className="feature-icon">🔍</span>
-          <h3 className="feature-title">Evidence Verification</h3>
+          <span className="feature-icon">🔐</span>
+          <h3 className="feature-title">Integrity Protection</h3>
           <p className="feature-desc">
-            Multi-layer verification system validates evidence authenticity
-            through cryptographic hashing, digital signatures, and blockchain
-            consensus. Instant verification of any evidence integrity with
-            complete audit trails.
+            Once submitted, evidence is permanently protected against tampering.
+            Any modification attempt is detected and recorded, preserving the
+            original state of the file.
           </p>
         </div>
 
+        {/* 3 */}
         <div className="feature-card">
-          <span className="feature-icon">🤖</span>
-          <h3 className="feature-title">AI Deepfake Detection</h3>
+          <span className="feature-icon">🧠</span>
+          <h3 className="feature-title">Authenticity Analysis</h3>
           <p className="feature-desc">
-            Advanced machine learning algorithms analyze media for manipulation,
-            deepfakes, and synthetic content. Real-time detection with detailed
-            forensic reports and confidence scoring for every file.
+            Automated analysis continuously checks evidence for manipulation,
+            inconsistencies, and synthetic alterations, helping establish
+            confidence in authenticity.
           </p>
         </div>
 
+        {/* 4 */}
         <div className="feature-card">
-          <span className="feature-icon">📊</span>
+          <span className="feature-icon">🕒</span>
           <h3 className="feature-title">Chain of Custody</h3>
           <p className="feature-desc">
-            Automated tracking of every interaction with evidence. Complete
-            timeline with timestamps, user actions, and modifications.
-            Court-admissible documentation generated automatically.
+            Every interaction with evidence is logged in a chronological trail,
+            creating a transparent history that can be reviewed, audited, and
+            presented when required.
+          </p>
+        </div>
+
+        {/* 5 */}
+        <div className="feature-card feature-card-center">
+          <span className="feature-icon">🛂</span>
+          <h3 className="feature-title">Role-Based Access</h3>
+          <p className="feature-desc">
+            Access to evidence is governed by defined roles and permissions,
+            ensuring only authorized users can view, verify, or manage sensitive
+            information.
+          </p>
+        </div>
+
+        {/* 6 */}
+        <div className="feature-card feature-card-center">
+          <span className="feature-icon">📊</span>
+          <h3 className="feature-title">Audit & Verification</h3>
+          <p className="feature-desc">
+            Evidence status, verification results, and activity logs are clearly
+            presented, enabling quick reviews and confident decision-making
+            without manual inspection.
           </p>
         </div>
       </div>

@@ -358,10 +358,28 @@ nav a {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(3, minmax(320px, 1fr));
   gap: 40px;
   max-width: 1400px;
   margin: 0 auto;
+}
+
+/* Center last 2 cards when only 2 remain */
+.features-grid > .feature-card:nth-last-child(1):nth-child(3n + 1),
+.features-grid > .feature-card:nth-last-child(2):nth-child(3n + 1) {
+  grid-column: 2 / span 1;
+}
+
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .feature-card {
