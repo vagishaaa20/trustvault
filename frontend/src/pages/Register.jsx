@@ -4,16 +4,21 @@ import { useNavigate } from "react-router-dom";
 const Register = () => {
   const navigate = useNavigate();
 
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [role, setRole] = useState("USER");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
   const handleRegister = async (e) => {
     e.preventDefault();
     setError("");
+
+    if (!username || !password) {
+      setError("Username and password required");
+      return;
+    }
 
     if (password !== confirmPassword) {
       setError("Passwords do not match");
@@ -23,33 +28,35 @@ const Register = () => {
     setLoading(true);
 
     try {
-      const res = await fetch("http://localhost:5000/auth/register", {
+      const res = await fetch("http://localhost:5001/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          name,
-          email,
+          username,
           password,
-          role: "user",
+          role
         }),
       });
 
       const data = await res.json();
 
       if (!res.ok) {
-        setError(data.message || "Registration failed");
+        setError(data.error || data.message || "Registration failed");
         return;
       }
 
-      localStorage.setItem(
-        "authUser",
-        JSON.stringify({ name, email, role: "user" })
-      );
+      // Store token and user info
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("role", data.user.role);
+      localStorage.setItem("userId", data.user.id);
+      localStorage.setItem("username", data.user.username);
 
       navigate("/home");
 
-    } catch {
-      setError("Server unavailable. Please try again.");
+
+    } catch (err) {
+      console.error("Register error:", err);
+      setError(err.message || "Server unavailable. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -66,28 +73,35 @@ const Register = () => {
         {error && <div className="auth-error">{error}</div>}
 
         <form onSubmit={handleRegister}>
-          <label>Full Name</label>
+          <label>Username</label>
           <div className="input-group">
             <span className="input-icon">👤</span>
             <input
               type="text"
-              placeholder="Enter your full name"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter your username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
           </div>
 
-          <label>Email Address</label>
+          <label>Role</label>
           <div className="input-group">
-            <span className="input-icon">📧</span>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+            <span className="input-icon">🔐</span>
+            <select
+              value={role}
+              onChange={(e) => setRole(e.target.value)}
+              style={{
+                width: "100%",
+                padding: "10px",
+                border: "none",
+                borderRadius: "4px",
+                fontSize: "1rem"
+              }}
+            >
+              <option value="USER">User (Regular)</option>
+              <option value="ADMIN">Admin</option>
+            </select>
           </div>
 
           <label>Password</label>

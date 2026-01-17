@@ -8,7 +8,7 @@ from web3 import Web3
 # ---------------- CONFIG ---------------- #
 
 GANACHE_URL = "http://127.0.0.1:7545"
-CONTRACT_ADDRESS = "0x05eea1F3E401B42f83D73E7c07951E23466DCDf5"
+CONTRACT_ADDRESS = "0xC254F0f90ffd7ED334a6764c04e482104B8F5cfc"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ABI_PATH = os.path.join(BASE_DIR, "compiled_code.json")
 

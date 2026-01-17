@@ -1,0 +1,23 @@
+{"userId":"614a7953-273b-4179-9da6-8bfdb97fee22","username":"testuser","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T18:20:10.712Z"}
+{"userId":"1f8a045e-ba9e-4280-8ee0-cf041f48149b","username":"testuser2","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T18:20:14.643Z"}
+{"userId":"adff8f0a-1c55-488e-8028-46b9ee769700","username":"admin_user","role":"ADMIN","action":"SIGNUP","status":200,"timestamp":"2026-01-17T18:24:50.559Z"}
+{"userId":"adff8f0a-1c55-488e-8028-46b9ee769700","username":"admin_user","role":"ADMIN","action":"VIEW_LOG_FILE","endpoint":"GET /log-file","status":200,"durationMs":0,"timestamp":"2026-01-17T18:24:55.080Z"}
+{"userId":"1f8a045e-ba9e-4280-8ee0-cf041f48149b","username":"testuser2","role":"USER","action":"VIEW_LOG_FILE","endpoint":"GET /log-file","status":403,"durationMs":0,"timestamp":"2026-01-17T18:25:01.401Z"}
+{"userId":"adff8f0a-1c55-488e-8028-46b9ee769700","username":"admin_user","role":"ADMIN","action":"VIEW_LOG_FILE","endpoint":"GET /log-file?page=1&limit=5","status":200,"durationMs":4,"timestamp":"2026-01-17T18:33:36.543Z"}
+{"userId":"030739d5-3470-48e1-b694-a6bffb57f2ca","username":"test_user","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T18:44:29.848Z"}
+{"userId":"16a57a4d-04da-451e-adbb-fc9e43ca9f41","username":"test_evidence","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T18:52:03.655Z"}
+{"userId":"16a57a4d-04da-451e-adbb-fc9e43ca9f41","username":"test_evidence","role":"USER","action":"CREATE_CASE","endpoint":"POST /cases","status":201,"durationMs":1,"timestamp":"2026-01-17T18:52:03.860Z"}
+{"userId":"16a57a4d-04da-451e-adbb-fc9e43ca9f41","username":"test_evidence","role":"USER","action":"UPLOAD_EVIDENCE","endpoint":"POST /upload","status":200,"durationMs":1,"timestamp":"2026-01-17T18:52:04.054Z"}
+{"userId":"db86532e-5198-4551-87ae-4f4244e55e47","username":"test_ev","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T18:52:12.830Z"}
+{"userId":"db86532e-5198-4551-87ae-4f4244e55e47","username":"test_ev","role":"USER","action":"CREATE_CASE","endpoint":"POST /cases","status":201,"durationMs":1,"timestamp":"2026-01-17T18:52:23.687Z"}
+{"userId":"db86532e-5198-4551-87ae-4f4244e55e47","username":"test_ev","role":"USER","action":"UPLOAD_EVIDENCE","endpoint":"POST /upload","status":200,"durationMs":0,"timestamp":"2026-01-17T18:52:31.963Z"}
+{"userId":"ac134c60-f7cc-4dc2-8fc4-2da535b82bd5","username":"1","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T19:06:13.337Z"}
+{"userId":"ac134c60-f7cc-4dc2-8fc4-2da535b82bd5","username":"1","role":"USER","action":"UPLOAD_EVIDENCE","endpoint":"POST /upload","status":500,"durationMs":2,"timestamp":"2026-01-17T19:06:25.877Z"}
+{"userId":"ac134c60-f7cc-4dc2-8fc4-2da535b82bd5","username":"1","role":"USER","action":"UPLOAD_EVIDENCE","endpoint":"POST /upload","status":500,"durationMs":1,"timestamp":"2026-01-17T19:08:11.506Z"}
+{"userId":"6d5c49eb-d340-4247-a48c-a583abb2a661","username":"11","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T19:11:50.116Z"}
+{"userId":"6d5c49eb-d340-4247-a48c-a583abb2a661","username":"11","role":"USER","action":"UPLOAD_EVIDENCE","endpoint":"POST /upload","status":500,"durationMs":1,"timestamp":"2026-01-17T19:12:07.086Z"}
+{"userId":"6d5c49eb-d340-4247-a48c-a583abb2a661","username":"11","role":"USER","action":"UPLOAD_EVIDENCE","endpoint":"POST /upload","status":500,"durationMs":2,"timestamp":"2026-01-17T19:18:13.506Z"}
+{"userId":"6d5c49eb-d340-4247-a48c-a583abb2a661","username":"11","role":"USER","action":"UPLOAD_EVIDENCE","endpoint":"POST /upload","status":500,"durationMs":5,"timestamp":"2026-01-17T19:18:16.233Z"}
+{"userId":"437d3869-8185-4fe9-b350-64a2c547fb37","username":"jwttest","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T21:13:24.741Z"}
+{"userId":"e0c03ca1-9d35-48cd-a26e-1b9360d62de3","username":"jwttest2","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T21:13:32.477Z"}
+{"userId":"ab54f8e0-8522-4c57-ab7e-5d17c6c5d8a9","username":"jwt_user_1","role":"USER","action":"SIGNUP","status":200,"timestamp":"2026-01-17T21:13:47.467Z"}

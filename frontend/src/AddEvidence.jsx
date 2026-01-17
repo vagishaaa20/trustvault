@@ -1,4 +1,5 @@
 import { useState } from "react";
+import tracker from "./ActivityTracker";
 import "./AddEvidence.css";
 
 const AddEvidence = () => {
@@ -12,6 +13,12 @@ const AddEvidence = () => {
   const uploadEvidence = async () => {
   if (!caseId || !evidenceId || !video) {
     alert("Please fill in all fields");
+    // Log failed attempt
+    tracker.logEvidenceAction("UPLOAD_FAILED", evidenceId || "unknown", {
+      reason: "Missing required fields",
+      caseId,
+      evidenceId,
+    });
     return;
   }
 
@@ -45,8 +52,16 @@ const AddEvidence = () => {
       throw new Error(data.message || "Upload failed");
     }
 
-    // ✅ SUCCESS
+    // ✅ SUCCESS - Log activity
     setVideoHash(data.videoHash || "");
+    tracker.logEvidenceAction("UPLOAD", evidenceId, {
+      fileName: video.name,
+      fileSize: video.size,
+      fileType: video.type,
+      caseId,
+      status: "success",
+    });
+    
     setUploadResult({
       type: "success",
       message: "Evidence uploaded successfully",
@@ -59,6 +74,14 @@ const AddEvidence = () => {
 
   } catch (error) {
     console.error("Upload error:", error);
+    
+    // Log error
+    tracker.logError("Upload failed", error.stack);
+    tracker.logEvidenceAction("UPLOAD_FAILED", evidenceId, {
+      fileName: video?.name,
+      errorMessage: error.message,
+      status: "error",
+    });
 
     setUploadResult({
       type: "error",
@@ -73,9 +96,9 @@ const AddEvidence = () => {
   return (
     <div className="add-evidence-container">
       <div className="add-evidence-card">
-        <h1 >Add Evidence</h1>
+        <h1 style={{  fontFamily: "Helvetica"}}>Add Evidence</h1>
 
-        <div className="form-group"  >
+        <div className="form-group" style={{  fontFamily: "Helvetica"}} >
           <label htmlFor="case-id">Case ID (UUID):</label>
           <input
             id="case-id"
@@ -86,7 +109,7 @@ const AddEvidence = () => {
           />
         </div>
 
-        <div className="form-group" >
+        <div className="form-group" style={{  fontFamily: "Helvetica"}}>
           <label htmlFor="evidence-id">Evidence ID:</label>
           <input
             id="evidence-id"
@@ -97,7 +120,7 @@ const AddEvidence = () => {
           />
         </div>
 
-        <div className="form-group" >
+        <div className="form-group" style={{  fontFamily: "Helvetica"}}>
           <label htmlFor="video-upload">Upload Video:</label>
           <input
             id="video-upload"
@@ -117,16 +140,6 @@ const AddEvidence = () => {
         >
           {loading ? "Uploading..." : "Upload Evidence"}
         </button>
-      {/* Security Notice */}
-<div className="security-notice">
-  <div className="security-icon">🔒</div>
-  <div className="security-text">
-    <h4>Security Notice</h4>
-    <p>
-      All evidence records are encrypted and protected with government-grade security. Access is logged for audit purposes. Unauthorized access is prohibited by law. This system maintains complete chain of custody integrity for legal admissibility.
-    </p>
-  </div>
-</div>
 
         {videoHash && (
           <div className="hash-display">

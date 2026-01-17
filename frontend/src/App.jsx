@@ -4,6 +4,7 @@ import Home from "./Home";
 import Landing from "./pages/Landing";
 import Login from "./pages/login";
 import Register from "./pages/Register";
+import ActivityLog from "./pages/ActivityLog";
 
 
 import AddEvidence from "./AddEvidence";
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/log-file" element={<ActivityLog />} />
         
         {/* Approach */}
         <Route path="/approach" element={<ViewEvidence />} />

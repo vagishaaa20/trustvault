@@ -16,12 +16,28 @@ const CheckEvidence = () => {
     setError("");
 
     try {
-      const res = await fetch("http://localhost:5001/records");
+      const token = localStorage.getItem("token");
+      if (!token) {
+        setError("Not authenticated. Please login first.");
+        setLoading(false);
+        return;
+      }
+
+      const res = await fetch("http://localhost:5001/evidence", {
+        headers: {
+          "Authorization": `Bearer ${token}`
+        }
+      });
+
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status}: ${res.statusText}`);
+      }
+
       const data = await res.json();
-      setRecords(data);
+      setRecords(data.evidence || data || []);
     } catch (err) {
       console.error(err);
-      setError("Failed to load evidence records");
+      setError(err.message || "Failed to load evidence records");
     } finally {
       setLoading(false);
     }
@@ -32,9 +48,10 @@ const CheckEvidence = () => {
 
     const q = filter.toLowerCase();
     return (
-      record.case_id?.toLowerCase().includes(q) ||
-      record.evidence_id?.toLowerCase().includes(q) ||
-      record.file_path?.toLowerCase().includes(q)
+      record.caseId?.toLowerCase().includes(q) ||
+      record.evidenceId?.toLowerCase().includes(q) ||
+      record.name?.toLowerCase().includes(q) ||
+      record.id?.toLowerCase().includes(q)
     );
   });
 

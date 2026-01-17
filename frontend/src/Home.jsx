@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -53,6 +53,35 @@ const cards = [
 
 const Home = () => {
   const navigate = useNavigate();
+  const [logs, setLogs] = useState([]);
+  const [loadingLogs, setLoadingLogs] = useState(false);
+
+  useEffect(() => {
+    fetchLogs();
+  }, []);
+
+  const fetchLogs = async () => {
+    try {
+      const token = localStorage.getItem("token");
+      if (!token) return;
+
+      setLoadingLogs(true);
+      const response = await fetch("http://localhost:5001/logs/me?limit=5", {
+        headers: {
+          "Authorization": `Bearer ${token}`
+        }
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        setLogs(data.logs || []);
+      }
+    } catch (err) {
+      console.error("Failed to load logs:", err);
+    } finally {
+      setLoadingLogs(false);
+    }
+  };
 
   return (
     <div className="home-root">
@@ -132,6 +161,48 @@ const Home = () => {
           </div>
 
         </div>
+
+        {/* Recent Activity Logs */}
+        <motion.div
+          className="logs-section"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+        >
+          <div className="logs-header">
+            <Activity size={20} style={{ marginRight: "10px" }} />
+            <h3>Recent Activity</h3>
+            <button
+              className="view-all-btn"
+              onClick={() => navigate("/log-file")}
+            >
+              View All →
+            </button>
+          </div>
+
+          {loadingLogs ? (
+            <div className="logs-loading">Loading activity logs...</div>
+          ) : logs.length === 0 ? (
+            <div className="logs-empty">No activity logs yet</div>
+          ) : (
+            <div className="logs-list">
+              {logs.slice(0, 5).map((log, idx) => (
+                <div key={idx} className="log-item">
+                  <div className="log-action">{log.action}</div>
+                  <div className="log-status" style={{
+                    color: log.status === 200 ? "#51cf66" : "#ff8787"
+                  }}>
+                    {log.status}
+                  </div>
+                  <div className="log-time">
+                    {new Date(log.timestamp).toLocaleTimeString()}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
+        </motion.div>
+
       {/* Security Notice */}
 <div className="security-notice">
   <div className="security-icon">🔒</div>

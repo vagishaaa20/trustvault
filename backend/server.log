@@ -1,0 +1,19 @@
+
+╔════════════════════════════════════════╗
+║   TrustVault Backend Server Running   ║
+║   Port: 5001                           ║
+║   JWT Secret: Configured               ║
+║   Activity Logging: Enabled             ║
+║   Blockchain Anchoring: Ready           ║
+╚════════════════════════════════════════╝
+  
+[LOG] SIGNUP - User: 16a57a4d-04da-451e-adbb-fc9e43ca9f41 - Status: 200
+[LOG] CREATE_CASE - User: 16a57a4d-04da-451e-adbb-fc9e43ca9f41 - Status: 201
+⛓️  Anchored on-chain hash: 3ab8cea9318ef2e36ad4cd4f9e014fb15169b8fe1c1e524d21aa14431d779eb1
+[LOG] UPLOAD_EVIDENCE - User: 16a57a4d-04da-451e-adbb-fc9e43ca9f41 - Status: 200
+⛓️  Anchored on-chain hash: 3c261cbe3cc7e9f78cb23f51de7b80190a15e53d44a2b7b8e0c024c8f628aa64
+[LOG] SIGNUP - User: db86532e-5198-4551-87ae-4f4244e55e47 - Status: 200
+[LOG] CREATE_CASE - User: db86532e-5198-4551-87ae-4f4244e55e47 - Status: 201
+⛓️  Anchored on-chain hash: a5211442a506f10033a5f9ac33669ed6cfe01ad1ef53914f8c1b24e4ab2a1e5a
+[LOG] UPLOAD_EVIDENCE - User: db86532e-5198-4551-87ae-4f4244e55e47 - Status: 200
+⛓️  Anchored on-chain hash: f5b46500e5f2a93102a2d373697f530c69976ce1e894469897f9bec8fd4962a0

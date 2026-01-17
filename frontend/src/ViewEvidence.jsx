@@ -6,10 +6,23 @@ const ViewRecords = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5001/records")
+    const token = localStorage.getItem("token");
+    if (!token) {
+      setError("Not authenticated. Please login first.");
+      setLoading(false);
+      return;
+    }
+
+    fetch("http://localhost:5001/evidence", {
+      headers: {
+        "Authorization": `Bearer ${token}`
+      }
+    })
       .then((res) => res.json())
       .then((data) => {
-        setRecords(data);
+        // Handle different response formats
+        const evidenceArray = Array.isArray(data) ? data : (data.evidence || data.logs || []);
+        setRecords(evidenceArray);
         setLoading(false);
       })
       .catch((err) => {
@@ -29,7 +42,7 @@ const ViewRecords = () => {
     return <p style={{ textAlign: "center", color: "red" }}>{error}</p>;
   }
 
-  if (records.length === 0) {
+  if (!records || records.length === 0) {
     return (
       <p style={styles.centerText}>No evidence records found.</p>
     );
@@ -54,9 +67,9 @@ const ViewRecords = () => {
 
         return (
           <div key={index} style={styles.card}>
-            <p><strong>Case ID:</strong> {record.case_id}</p>
-            <p><strong>Evidence ID:</strong> {record.evidence_id}</p>
-            <p><strong>File Path:</strong> {record.file_path}</p>
+            <p><strong>Case ID:</strong> {record.caseId || record.case_id}</p>
+            <p><strong>Evidence ID:</strong> {record.id || record.evidence_id}</p>
+            <p><strong>Name:</strong> {record.name || record.file_path}</p>
 
             {/* 🔍 Deepfake Info */}
             <div style={styles.analysisBox}>
