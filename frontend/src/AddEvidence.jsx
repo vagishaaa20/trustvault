@@ -42,7 +42,7 @@ const AddEvidence = () => {
 
     // ✅ USE BACKEND MESSAGE
     if (!res.ok) {
-      throw new Error(data.message || "Upload failed");
+      throw new Error(data.message || "Exists in Blockchain");
     }
 
     // ✅ SUCCESS
@@ -62,7 +62,7 @@ const AddEvidence = () => {
 
     setUploadResult({
       type: "error",
-      message: "Upload failed",
+      message: "Exists in Blockchain",
       output: error.message,
     });
   } finally {

@@ -77,7 +77,7 @@ const Home = () => {
            Chain of Custody System
           </h1>
           <p className="hero-subtitle">
-          Secure evidence management powered by blockchain integrity and AI forensics.
+          Secure evidence management powered by blockchain integrity.
          </p>
         </motion.div>
 
