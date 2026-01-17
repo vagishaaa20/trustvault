@@ -66,7 +66,7 @@ cleanup() {
 # MAIN SCRIPT
 # ========================================
 
-print_header "🔐 TrustVault - Chain of Custody System"
+print_header "TrustVault - Chain of Custody System"
 echo "Master Startup & Deployment Script"
 echo ""
 
@@ -79,55 +79,106 @@ print_header "STEP 1: Deploying Smart Contract"
 echo "Checking prerequisites..."
 
 # Check if Ganache is running
-if ! nc -z localhost 8545 2>/dev/null; then
-    print_warning "Ganache is not running on port 8545"
-    echo "Please start Ganache before continuing (port 8545 required for deployment)"
+if ! nc -z localhost 7545 2>/dev/null; then
+    print_warning "Ganache is not running on port 7545"
+    echo "Please start Ganache before continuing (port 7545 required)"
     read -p "Press Enter once Ganache is running, or Ctrl+C to exit: "
 fi
 
 cd "$PROJECT_DIR"
 
-print_step "Deploying smart contract to Ganache..."
-DEPLOY_OUTPUT=$(npx truffle migrate --network ganache 2>&1)
-
-# Extract contract address from deployment output
-CONTRACT_ADDRESS=$(echo "$DEPLOY_OUTPUT" | grep "contract address:" | tail -1 | grep -oE '0x[a-fA-F0-9]+')
-
-if [ -z "$CONTRACT_ADDRESS" ]; then
-    print_error "Failed to extract contract address from deployment"
-    print_error "Deployment output:"
-    echo "$DEPLOY_OUTPUT"
-    exit 1
+# Use existing contract address or deploy new one
+if [ -f "$PROJECT_DIR/backend/.env" ]; then
+    EXISTING_ADDRESS=$(grep "CONTRACT_ADDRESS=" "$PROJECT_DIR/backend/.env" | cut -d'=' -f2)
+    if [ ! -z "$EXISTING_ADDRESS" ] && [ "$EXISTING_ADDRESS" != "0x0000000000000000000000000000000000000000" ]; then
+        CONTRACT_ADDRESS="$EXISTING_ADDRESS"
+        print_step "Using existing contract at: $CONTRACT_ADDRESS"
+    fi
 fi
 
-print_step "Contract deployed at: $CONTRACT_ADDRESS"
-
-# Update all Python scripts with the new contract address
-print_step "Updating Python scripts with contract address..."
-
-# Update insert.py
-if [ -f "$PROJECT_DIR/insert.py" ]; then
-    sed -i '' "s/CONTRACT_ADDRESS = \"0x[a-fA-F0-9]*\"/CONTRACT_ADDRESS = \"$CONTRACT_ADDRESS\"/g" "$PROJECT_DIR/insert.py"
-    print_step "Updated insert.py"
+# If no contract address, try to deploy (skip if truffle fails)
+if [ -z "$CONTRACT_ADDRESS" ] || [ "$CONTRACT_ADDRESS" = "0x0000000000000000000000000000000000000000" ]; then
+    print_step "Deploying smart contract to Ganache..."
+    
+    # Try truffle deployment (may fail due to Node.js compatibility)
+    DEPLOY_OUTPUT=$(npx truffle migrate --network ganache-gui 2>&1 || echo "Truffle deployment skipped")
+    
+    # Extract contract address from deployment output
+    CONTRACT_ADDRESS=$(echo "$DEPLOY_OUTPUT" | grep "contract address:" | tail -1 | grep -oE '0x[a-fA-F0-9]+')
+    
+    if [ -z "$CONTRACT_ADDRESS" ]; then
+        # Fallback: use a default contract address (user must deploy manually if needed)
+        print_warning "Could not deploy contract automatically"
+        print_warning "Make sure to deploy the contract manually or ensure it exists in your .env"
+        CONTRACT_ADDRESS="0x0000000000000000000000000000000000000000"
+    else
+        print_step "Contract deployed at: $CONTRACT_ADDRESS"
+    fi
 fi
 
-# Update verifyBlock.py
-if [ -f "$PROJECT_DIR/verifyBlock.py" ]; then
-    sed -i '' "s/CONTRACT_ADDRESS = \"0x[a-fA-F0-9]*\"/CONTRACT_ADDRESS = \"$CONTRACT_ADDRESS\"/g" "$PROJECT_DIR/verifyBlock.py"
-    print_step "Updated verifyBlock.py"
-fi
+# Update Python scripts if we have a valid contract address
+if [ "$CONTRACT_ADDRESS" != "0x0000000000000000000000000000000000000000" ]; then
+    print_step "Updating Python scripts with contract address..."
+    
+    # Update insert.py
+    if [ -f "$PROJECT_DIR/insert.py" ]; then
+        sed -i '' "s/CONTRACT_ADDRESS = \"0x[a-fA-F0-9]*\"/CONTRACT_ADDRESS = \"$CONTRACT_ADDRESS\"/g" "$PROJECT_DIR/insert.py"
+        print_step "Updated insert.py"
+    fi
 
-# Update queryEvidence.py
-if [ -f "$PROJECT_DIR/queryEvidence.py" ]; then
-    sed -i '' "s/CONTRACT_ADDRESS = \"0x[a-fA-F0-9]*\"/CONTRACT_ADDRESS = \"$CONTRACT_ADDRESS\"/g" "$PROJECT_DIR/queryEvidence.py"
-    print_step "Updated queryEvidence.py"
-fi
+    # Update verifyBlock.py
+    if [ -f "$PROJECT_DIR/verifyBlock.py" ]; then
+        sed -i '' "s/CONTRACT_ADDRESS = \"0x[a-fA-F0-9]*\"/CONTRACT_ADDRESS = \"$CONTRACT_ADDRESS\"/g" "$PROJECT_DIR/verifyBlock.py"
+        print_step "Updated verifyBlock.py"
+    fi
 
-print_step "All Python scripts updated with contract address: $CONTRACT_ADDRESS"
+    # Update queryEvidence.py
+    if [ -f "$PROJECT_DIR/queryEvidence.py" ]; then
+        sed -i '' "s/CONTRACT_ADDRESS = \"0x[a-fA-F0-9]*\"/CONTRACT_ADDRESS = \"$CONTRACT_ADDRESS\"/g" "$PROJECT_DIR/queryEvidence.py"
+        print_step "Updated queryEvidence.py"
+    fi
+
+    print_step "All Python scripts updated with contract address: $CONTRACT_ADDRESS"
+fi
 
 # ========================================
-# STEP 2: INSTALL DEPENDENCIES
+
+
+# STEP 1B: Setup Blockchain Event Logging
 # ========================================
+
+print_header "STEP 1B: Setting Up Blockchain Event Logging"
+
+# Check if .env exists, if not create from template
+if [ ! -f "$PROJECT_DIR/backend/.env" ]; then
+    print_step "Creating .env file for blockchain configuration..."
+    cat > "$PROJECT_DIR/backend/.env" << EOF
+# Blockchain Configuration
+CONTRACT_ADDRESS=$CONTRACT_ADDRESS
+RPC_URL=http://127.0.0.1:7545
+PRIVATE_KEY=0x0000000000000000000000000000000000000000000000000000000000000000
+
+# Google OAuth (set these with your actual values)
+GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=your-client-secret
+
+# Server
+NODE_ENV=development
+PORT=5001
+EOF
+    print_step "Created .env file at $PROJECT_DIR/backend/.env"
+    print_warning "IMPORTANT: Update .env with your:"
+    print_warning "  - PRIVATE_KEY (Ganache wallet private key)"
+    print_warning "  - GOOGLE_CLIENT_ID and GOOGLE_CLIENT_SECRET"
+else
+    # Update CONTRACT_ADDRESS in existing .env
+    if grep -q "CONTRACT_ADDRESS=" "$PROJECT_DIR/backend/.env"; then
+        sed -i '' "s|CONTRACT_ADDRESS=.*|CONTRACT_ADDRESS=$CONTRACT_ADDRESS|g" "$PROJECT_DIR/backend/.env"
+        print_step "Updated CONTRACT_ADDRESS in .env to: $CONTRACT_ADDRESS"
+    fi
+fi
+
+print_step "Blockchain event logging configured"
 
 print_header "STEP 2: Installing Dependencies"
 
@@ -141,6 +192,13 @@ if [ ! -d "$PROJECT_DIR/backend/node_modules" ]; then
 else
     print_step "Backend dependencies already installed"
 fi
+
+# Install blockchain event logging dependencies
+print_step "Installing blockchain event logging dependencies..."
+cd "$PROJECT_DIR/backend"
+npm install ethers@5.7.2 google-auth-library@9.11.0 --save
+cd "$PROJECT_DIR"
+print_step "Blockchain event logging dependencies installed"
 
 # Check and install Node modules for frontend
 if [ ! -d "$PROJECT_DIR/frontend/node_modules" ]; then
@@ -180,55 +238,117 @@ print_step "Python dependencies verified"
 # STEP 3: START ALL SERVICES
 # ========================================
 
-print_header "STEP 3: Starting All Services"
+print_header "STEP 3: Starting All Services in New Terminal Windows"
 
-# Trap cleanup on exit
-trap cleanup SIGINT SIGTERM
-
-# Start backend server
-print_step "Starting backend server on port 5001..."
-cd "$PROJECT_DIR/backend"
-npm start &
-BACKEND_PID=$!
+# Start backend server in new Terminal window
+print_step "Launching backend server on port 5001 (new Terminal)..."
+osascript <<EOF
+tell application "Terminal"
+    activate
+    do script "cd '$PROJECT_DIR/backend' && npm start"
+end tell
+EOF
 sleep 3
 
-# Start deepfake detection service (Streamlit)
-print_step "Starting deepfake detection service on port 8501..."
-cd "$PROJECT_DIR/deepfake"
-source venv/bin/activate
-streamlit run streamlit_app.py --server.port 8501 &
-DEEPFAKE_PID=$!
-deactivate
+# Start frontend (React) in new Terminal window
+print_step "Launching frontend application on port 3000 (new Terminal)..."
+osascript <<EOF
+tell application "Terminal"
+    activate
+    do script "cd '$PROJECT_DIR/frontend' && npm start"
+end tell
+EOF
 sleep 3
 
-# Start frontend
-print_step "Starting frontend on port 3000..."
-cd "$PROJECT_DIR/frontend"
-npm start &
-FRONTEND_PID=$!
+print_step "Services launching in separate Terminal windows..."
+sleep 3
 
 # ========================================
-# SUMMARY
+# STEP 4: WAIT FOR SERVICES TO BE READY
+# ========================================
+
+print_step "Waiting for services to fully initialize..."
+
+# Check backend health
+BACKEND_READY=0
+for i in {1..30}; do
+    if curl -s http://localhost:5001/health 2>/dev/null | grep -q "ok"; then
+        BACKEND_READY=1
+        print_step "Backend is ready"
+        break
+    fi
+    echo -ne "."
+    sleep 1
+done
+
+if [ $BACKEND_READY -eq 0 ]; then
+    print_warning "Backend may still be initializing, proceeding anyway..."
+fi
+
+# Wait for frontend to compile (longer wait needed)
+print_step "Waiting for frontend to compile (this may take 10-15 seconds)..."
+sleep 8
+
+# ========================================
+# STEP 5: OPEN IN CHROME
+# ========================================
+
+print_step "Opening website in Chrome..."
+open -a "Google Chrome" "http://localhost:3000" 2>/dev/null || {
+    print_warning "Chrome not found. Opening with default browser..."
+    open "http://localhost:3000"
+}
+sleep 1
+
+# ========================================
+# STEP 6: BLOCKCHAIN EVENT LOGGING STATUS
 # ========================================
 
 print_header "🚀 All Services Started Successfully"
 
-echo "Services are running:"
 echo ""
-echo -e "  ${BLUE}Ganache (Blockchain)${NC}        http://localhost:7545"
-echo -e "  ${BLUE}Backend API${NC}                http://localhost:5001"
-echo -e "  ${BLUE}Deepfake Detection${NC}         http://localhost:8501"
+echo -e "${GREEN}✓ Services are running in separate Terminal windows:${NC}"
+echo ""
 echo -e "  ${BLUE}Frontend Application${NC}       http://localhost:3000"
-echo ""
-echo -e "  ${BLUE}Contract Address${NC}           $CONTRACT_ADDRESS"
-echo ""
-echo "Process IDs:"
-echo "  Backend PID:    $BACKEND_PID"
-echo "  Deepfake PID:   $DEEPFAKE_PID"
-echo "  Frontend PID:   $FRONTEND_PID"
-echo ""
-echo "Press Ctrl+C to stop all services."
+echo -e "  ${BLUE}Backend API${NC}                http://localhost:5001"
+echo -e "  ${BLUE}Ganache (Blockchain)${NC}       http://localhost:7545"
 echo ""
 
-# Wait for all background processes
-wait
+echo -e "${GREEN}✓ Frontend Routes Available:${NC}"
+echo ""
+echo "  / - Home Page"
+echo "  /login - Google OAuth Login"
+echo "  /approach - System Approach"
+echo "  /add-evidence - Upload Evidence"
+echo "  /verify-evidence - Verify Evidence"
+echo "  /view-evidence - View Evidence"
+echo "  /deepfake-detection - Deepfake Detection"
+echo "  /dashboard - Evidence Dashboard"
+echo "  /blockchain-events - Blockchain Event Log"
+echo ""
+
+echo -e "${GREEN}✓ Blockchain Event Logging:${NC}"
+echo ""
+echo "  POST /api/blockchain/log-upload - Log upload events"
+echo "  POST /api/blockchain/log-view - Log view events"
+echo "  POST /api/blockchain/log-transfer - Log transfer events"
+echo "  POST /api/blockchain/log-export - Log export events"
+echo "  GET /api/blockchain/user-events - Get user's events"
+echo "  GET /api/blockchain/evidence-events/:id - Get evidence events"
+echo ""
+
+echo -e "${BLUE}Contract Address:${NC} $CONTRACT_ADDRESS"
+echo ""
+
+echo -e "${YELLOW}⚠️  Management:${NC}"
+echo "  • Check individual Terminal windows for logs"
+echo "  • Press Ctrl+C in each window to stop services"
+echo "  • Or run: pkill -f 'node\\|npm'"
+echo ""
+echo -e "${YELLOW}📚 Next Steps:${NC}"
+echo "  1. Wait for both Terminal windows to show 'ready on' message"
+echo "  2. Open http://localhost:3000 in your browser"
+echo "  3. Login with Google OAuth"
+echo "  4. Upload evidence to test blockchain event logging"
+echo "  5. View /blockchain-events to see immutable event log"
+echo ""

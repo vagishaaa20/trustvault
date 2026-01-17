@@ -1,0 +1,1 @@
+{"timestamp":"2026-01-17T10:05:03.406Z","date":"2026-01-17","action":"USER_LOGIN","details":{"userAgent":"curl/8.7.1","ipAddress":"127.0.0.1","route":"/api/user/log-activity","method":"POST","status":"success","email":"testuser@forensics.com","role":"user"}}

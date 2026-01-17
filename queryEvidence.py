@@ -9,7 +9,7 @@ from datetime import datetime, timezone
 from web3 import Web3
 
 GANACHE_URL = "http://127.0.0.1:7545"
-CONTRACT_ADDRESS = "0xb928dbC5D08d2889194A2DBF0415B65e7e5f5862"
+CONTRACT_ADDRESS = "0xD9aC54C760a12487c5C2865Face64a1F2D38445C"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 ABI_PATH = os.path.join(BASE_DIR, "compiled_code.json")
 

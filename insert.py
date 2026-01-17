@@ -25,18 +25,19 @@ def generate_video_hash(file_path):
 def insert(case_id, evidence_id, video_path):
 
     if not os.path.exists(video_path):
-        raise Exception("Video file not found")
+        print(f"ERROR: Video file not found at {video_path}", file=sys.stderr)
+        raise Exception(f"Video file not found: {video_path}")
 
     # 1️⃣ Generate hash
     video_hash = generate_video_hash(video_path)
     local_timestamp = datetime.now(timezone.utc).isoformat()
 
     print("========== EVIDENCE INGESTION ==========")
-    print(" Case ID        :", case_id)
-    print(" Evidence ID    :", evidence_id)
-    print(" File Path      :", video_path)
-    print(" SHA-256 Hash   :", video_hash)
-    print(" Local Time     :", local_timestamp)
+    print(f" Case ID        : {case_id}")
+    print(f" Evidence ID    : {evidence_id}")
+    print(f" File Path      : {video_path}")
+    print(f" SHA-256 Hash   : {video_hash}")
+    print(f" Local Time     : {local_timestamp}")
     print("----------------------------------------")
 
     # 2️⃣ Connect to Ethereum

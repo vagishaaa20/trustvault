@@ -11,6 +11,8 @@ import VerifyEvidence from "./VerifyEvidence";
 import ViewEvidence from "./ViewEvidence";
 import SideBySide from "./SideBySide";
 import DeepfakeDetection from "./DeepfakeDetection";
+import BlockchainEvents from "./BlockchainEvents";
+import UserActivityLog from "./UserActivityLog";
 
 const App = () => {
   return (
@@ -34,6 +36,15 @@ const App = () => {
         
         {/* Side by Side - Add & Check Evidence */}
         <Route path="/dashboard" element={<SideBySide />} />
+        
+        {/* Blockchain Event Log */}
+        <Route path="/blockchain-events" element={<BlockchainEvents />} />
+        <Route path="/blockchain" element={<BlockchainEvents />} />
+        <Route path="/api/blockchain/events" element={<BlockchainEvents />} />
+        
+        {/* User Activity Log */}
+        <Route path="/activity-log" element={<UserActivityLog />} />
+        <Route path="/user-activity" element={<UserActivityLog />} />
       </Routes>
     </>
   );
