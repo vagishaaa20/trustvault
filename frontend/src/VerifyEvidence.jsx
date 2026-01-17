@@ -147,6 +147,40 @@ const VerifyEvidence = () => {
             </button>
           </div>
         )}
+        {/* Verification Info */}
+<div className="verification-info">
+
+  {/* How Verification Works */}
+  <div className="info-card info-blue">
+    <h3>
+      <span className="info-icon">ℹ️</span>
+      How Verification Works
+    </h3>
+
+    <ul>
+      <li>Cryptographic hash verification</li>
+      <li>Digital signature validation</li>
+      <li>Chain of custody audit trail</li>
+      <li>Metadata integrity check</li>
+      <li>Timestamp authentication</li>
+    </ul>
+  </div>
+
+  {/* Verification Standards */}
+  <div className="info-card info-green">
+    <h3>
+      <span className="info-icon">✔️</span>
+      Verification Standards
+    </h3>
+
+    <p>
+      Compliant with the Indian Evidence Act and recognized digital
+      forensics standards to ensure legal admissibility and integrity
+      of electronic evidence.
+    </p>
+  </div>
+
+</div>
 
         {verificationResult && (
           <div className={`result-box ${verificationResult.status}`}>

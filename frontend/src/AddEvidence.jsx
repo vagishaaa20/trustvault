@@ -117,6 +117,16 @@ const AddEvidence = () => {
         >
           {loading ? "Uploading..." : "Upload Evidence"}
         </button>
+      {/* Security Notice */}
+<div className="security-notice">
+  <div className="security-icon">🔒</div>
+  <div className="security-text">
+    <h4>Security Notice</h4>
+    <p>
+      All evidence records are encrypted and protected with government-grade security. Access is logged for audit purposes. Unauthorized access is prohibited by law. This system maintains complete chain of custody integrity for legal admissibility.
+    </p>
+  </div>
+</div>
 
         {videoHash && (
           <div className="hash-display">

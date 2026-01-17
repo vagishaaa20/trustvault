@@ -210,15 +210,25 @@ app.get("/health", (req, res) => {
 //show video in view records
 app.get("/records", async (req, res) => {
   try {
-    const result = await pool.query(
-      "SELECT case_id, evidence_id, file_path FROM evidence_metadata ORDER BY created_at DESC"
-    );
+    const result = await pool.query(`
+      SELECT
+        case_id,
+        evidence_id,
+        file_path,
+        avg_probability,
+        prediction,
+        deepfake_analyzed_at
+      FROM evidence_metadata
+      ORDER BY created_at DESC
+    `);
+
     res.json(result.rows);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Failed to fetch records" });
   }
 });
+
 
 
 

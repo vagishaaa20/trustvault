@@ -132,10 +132,6 @@
   cursor: not-allowed;
 }
 
-/* ============================= */
-/* ❗ OUTPUT UI — LEFT UNCHANGED */
-/* ============================= */
-
 .hash-display {
   margin-top: 25px;
   padding: 20px;
@@ -225,3 +221,41 @@
     font-size: 24px;
   }
 }
+/* Security Notice */
+.security-notice {
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: 14px;
+
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+
+  background: linear-gradient(
+    135deg,
+    rgba(30, 41, 59, 0.7),
+    rgba(17, 24, 39, 0.85)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.22);
+}
+
+.security-icon {
+  font-size: 22px;
+  margin-top: 2px;
+}
+
+.security-text h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f9fafb;
+}
+
+.security-text p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #cbd5f5;
+}
+

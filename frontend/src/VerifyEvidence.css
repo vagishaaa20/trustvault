@@ -226,3 +226,80 @@
     font-size: 14px;
   }
 }
+/* Verification Info Section */
+.verification-info {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* Base info card */
+.info-card {
+  padding: 22px 26px;
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(30, 41, 59, 0.7),
+    rgba(17, 24, 39, 0.9)
+  );
+
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+}
+
+/* Headings */
+.info-card h3 {
+  margin: 0 0 14px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #f9fafb;
+}
+
+/* Icon */
+.info-icon {
+  font-size: 18px;
+}
+
+/* Blue themed card */
+.info-blue {
+  border-color: rgba(96, 165, 250, 0.4);
+}
+
+/* Green themed card */
+.info-green {
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+/* List */
+.info-card ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.info-card li {
+  font-size: 14px;
+  color: #cbd5f5;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Paragraph */
+.info-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .info-card {
+    padding: 18px;
+  }
+}
+
