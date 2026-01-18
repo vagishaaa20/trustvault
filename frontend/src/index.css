@@ -2069,9 +2069,16 @@ footer {
   text-shadow: 0 0 10px rgba(52, 211, 153, 0.5);
 }
 
+/* Result Box for Add Evidence */
+.add-evidence-card .result-box.error {
+  background: rgba(251, 191, 36, 0.1);  /* Changed from red to yellow */
+  border-color: #fbbf24;  /* Changed from #ff6b6b to yellow */
+  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);  /* Yellow glow */
+}
+
 .add-evidence-card .result-box.error h3 {
-  color: #ff6b6b;
-  text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+  color: #fbbf24;  /* Changed from #ff6b6b to yellow */
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.5);  /* Yellow glow */
 }
 
 .result-output {

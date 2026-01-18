@@ -61,7 +61,7 @@ const AddEvidence = () => {
 
     setUploadResult({
       type: "error",
-      message: "Upload failed",
+      message: "Exists in Blockchain",
       output: error.message,
     });
   } finally {
