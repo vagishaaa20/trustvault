@@ -71,9 +71,12 @@ app.post("/upload", upload.single("video"), async (req, res) => {
   try {
   await pool.query(
     `INSERT INTO evidence_metadata 
-     (case_id, evidence_id, file_path, file_hash)
-     VALUES ($1, $2, $3, $4)`,
-    [caseId, evidenceId, videoPath, videoHash]
+     (case_id, evidence_id, file_path, file_hash, latitude, longitude, location_name)
+     VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+    [caseId, evidenceId, videoPath, videoHash, 
+     req.body.latitude || null, 
+     req.body.longitude || null, 
+     req.body.locationName || null]
   );
 } catch (err) {
   // 23505 = unique constraint violation

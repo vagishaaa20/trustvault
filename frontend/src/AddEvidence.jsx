@@ -9,6 +9,9 @@ const AddEvidence = () => {
   const [loading, setLoading] = useState(false);
   const [uploadResult, setUploadResult] = useState(null);
   const [videoHash, setVideoHash] = useState("");
+  const [latitude, setLatitude] = useState("");
+  const [longitude, setLongitude] = useState("");
+  const [locationName, setLocationName] = useState("");
 
   const uploadEvidence = async () => {
   if (!caseId || !evidenceId || !video) {
@@ -30,6 +33,9 @@ const AddEvidence = () => {
   formData.append("caseId", caseId);
   formData.append("evidenceId", evidenceId);
   formData.append("video", video);
+  formData.append("latitude", latitude || null);
+  formData.append("longitude", longitude || null);
+  formData.append("locationName", locationName || null);
 
   try {
     const controller = new AbortController();
@@ -71,6 +77,9 @@ const AddEvidence = () => {
     setCaseId("");
     setEvidenceId("");
     setVideo(null);
+    setLatitude("");
+    setLongitude("");
+    setLocationName("");
 
   } catch (error) {
     console.error("Upload error:", error);
@@ -131,6 +140,40 @@ const AddEvidence = () => {
             disabled={loading}
           />
           {video && <p className="file-info">{video.name}</p>}
+        </div>
+
+        <div className="form-group" style={{  fontFamily: "Helvetica"}}>
+          <label>📍 Geolocation (Optional)</label>
+          <div style={{ display: "flex", gap: "10px", marginBottom: "10px" }}>
+            <input
+              type="number"
+              placeholder="Latitude"
+              value={latitude}
+              onChange={(e) => setLatitude(e.target.value)}
+              className="input-field"
+              disabled={loading}
+              step="0.000001"
+              style={{ flex: 1 }}
+            />
+            <input
+              type="number"
+              placeholder="Longitude"
+              value={longitude}
+              onChange={(e) => setLongitude(e.target.value)}
+              className="input-field"
+              disabled={loading}
+              step="0.000001"
+              style={{ flex: 1 }}
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Location Name (e.g., City, Country)"
+            value={locationName}
+            onChange={(e) => setLocationName(e.target.value)}
+            className="input-field"
+            disabled={loading}
+          />
         </div>
 
         <button

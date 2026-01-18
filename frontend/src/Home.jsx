@@ -25,7 +25,7 @@ const cards = [
     title: "View Records",
     desc: "Evidence details",
     icon: FileText,
-    path: "/approach",
+    path: "/check-evidence",
     accent: "green"
   },
   {

@@ -57,7 +57,7 @@ async function main() {
   console.log("- Deploy the contract");
 
   console.log("\n" + "=".repeat(60));
-  console.log("✨ Ganache is running on http://localhost:8545");
+  console.log("✨ Ganache is running on http://localhost:7545");
 }
 
 main().catch(console.error);

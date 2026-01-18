@@ -80,9 +80,9 @@ print_header "STEP 1: Deploying Smart Contract"
 echo "Checking prerequisites..."
 
 # Check if Ganache is running
-if ! nc -z localhost 8545 2>/dev/null; then
-    print_warning "Ganache is not running on port 8545"
-    echo "Please start Ganache before continuing (port 8545 required for deployment)"
+if ! nc -z localhost 7545 2>/dev/null; then
+    print_warning "Ganache is not running on port 7545"
+    echo "Please start Ganache before continuing (port 7545 required for deployment)"
     read -p "Press Enter once Ganache is running, or Ctrl+C to exit: "
 fi
 

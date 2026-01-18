@@ -4,7 +4,7 @@ echo "=========================================="
 echo "Chain of Custody System - Starting..."
 echo "=========================================="
 echo ""
-echo "Make sure Ganache is running on port 8545!"
+echo "Make sure Ganache is running on port 7545!"
 echo ""
 
 # Deploy smart contract and update Python files with new address

@@ -8,6 +8,7 @@ import ActivityLog from "./pages/ActivityLog";
 
 
 import AddEvidence from "./AddEvidence";
+import CheckEvidence from "./CheckEvidence";
 import VerifyEvidence from "./VerifyEvidence";
 import ViewEvidence from "./ViewEvidence";
 import SideBySide from "./SideBySide";
@@ -28,6 +29,7 @@ const App = () => {
 
         {/* Evidence Chain of Custody */}
         <Route path="/add-evidence" element={<AddEvidence />} />
+        <Route path="/check-evidence" element={<CheckEvidence />} />
         <Route path="/verify-evidence" element={<VerifyEvidence />} />
         <Route path="/view-evidence" element={<ViewEvidence />} />
         

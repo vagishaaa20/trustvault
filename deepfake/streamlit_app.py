@@ -5,10 +5,27 @@ import psycopg2
 import tempfile
 import os
 import sys
+from PIL import Image
+from PIL.ExifTags import TAGS
+import json
 
+def extract_video_metadata(video_path):
+    """Extract metadata from video file"""
+    cap = cv2.VideoCapture(video_path)
+    
+    metadata = {
+        'total_frames': int(cap.get(cv2.CAP_PROP_FRAME_COUNT)),
+        'fps': cap.get(cv2.CAP_PROP_FPS),
+        'width': int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)),
+        'height': int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)),
+        'duration_seconds': int(cap.get(cv2.CAP_PROP_FRAME_COUNT)) / cap.get(cv2.CAP_PROP_FPS) if cap.get(cv2.CAP_PROP_FPS) > 0 else 0
+    }
+    
+    cap.release()
+    return metadata
 # ---------------- DB UPDATE FUNCTION ---------------- #
 
-def update_deepfake_result(case_id, evidence_id, avg_probability, prediction):
+def update_deepfake_result(case_id, evidence_id, avg_probability, prediction,video_metadata=None, geolocation=None):
     conn = psycopg2.connect(
         host="localhost",
         database="postgres",
@@ -23,12 +40,28 @@ def update_deepfake_result(case_id, evidence_id, avg_probability, prediction):
         SET
             avg_probability = %s,
             prediction = %s,
-            deepfake_analyzed_at = NOW()
+            deepfake_analyzed_at = NOW(),
+            total_frames = %s,
+            fps = %s,
+            video_width = %s,
+            video_height = %s,
+            duration_seconds = %s,
+            latitude = %s,
+            longitude = %s,
+            location_name = %s
         WHERE case_id = %s
           AND evidence_id = %s
     """, (
         avg_probability,
         prediction,
+        video_metadata.get('total_frames') if video_metadata else None,
+        video_metadata.get('fps') if video_metadata else None,
+        video_metadata.get('width') if video_metadata else None,
+        video_metadata.get('height') if video_metadata else None,
+        video_metadata.get('duration_seconds') if video_metadata else None,
+        geolocation.get('latitude') if geolocation else None,
+        geolocation.get('longitude') if geolocation else None,
+        geolocation.get('location_name') if geolocation else None,
         case_id,
         evidence_id
     ))
@@ -40,6 +73,7 @@ def update_deepfake_result(case_id, evidence_id, avg_probability, prediction):
 
     cur.close()
     conn.close()
+
 
 # --------------------------------------------------- #
 
@@ -81,6 +115,21 @@ uploaded_video = st.file_uploader(
     "Upload a video file",
     type=["mp4", "avi", "mov"]
 )
+
+st.subheader("📍 Geolocation (Optional)")
+col1, col2 = st.columns(2)
+with col1:
+    latitude = st.number_input("Latitude", value=0.0, format="%.6f")
+with col2:
+    longitude = st.number_input("Longitude", value=0.0, format="%.6f")
+
+location_name = st.text_input("Location Name (City, Country, etc.)")
+
+geolocation = {
+    'latitude': latitude if latitude != 0.0 else None,
+    'longitude': longitude if longitude != 0.0 else None,
+    'location_name': location_name if location_name else None
+}
 
 # ---------------- VALIDATION ---------------- #
 

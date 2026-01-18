@@ -1,6 +1,6 @@
 /* CheckEvidence - Minimalist Grey Design */
 
-.check-evidence-container {
+.check-evidence-wrapper {
   min-height: 100vh;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   padding: 20px;
@@ -8,6 +8,13 @@
   align-items: flex-start;
   justify-content: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.check-evidence-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
 }
 
 .check-evidence-card {
