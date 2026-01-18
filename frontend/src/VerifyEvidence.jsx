@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./VerifyEvidence.css";
 
 const VerifyEvidence = () => {
   const [evidenceId, setEvidenceId] = useState("");

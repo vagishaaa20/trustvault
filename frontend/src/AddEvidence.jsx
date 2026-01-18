@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./AddEvidence.css";
 
 const AddEvidence = () => {
   const [caseId, setCaseId] = useState("");
@@ -42,7 +41,7 @@ const AddEvidence = () => {
 
     // ✅ USE BACKEND MESSAGE
     if (!res.ok) {
-      throw new Error(data.message || "Exists in Blockchain");
+      throw new Error(data.message || "Upload failed");
     }
 
     // ✅ SUCCESS
@@ -62,7 +61,7 @@ const AddEvidence = () => {
 
     setUploadResult({
       type: "error",
-      message: "Exists in Blockchain",
+      message: "Upload failed",
       output: error.message,
     });
   } finally {

@@ -20,122 +20,70 @@ const ViewRecords = () => {
   }, []);
 
   if (loading) {
-    return (
-      <p style={styles.centerText}>Loading records...</p>
-    );
+    return <p className="loading-text">Loading records...</p>;
   }
 
   if (error) {
-    return <p style={{ textAlign: "center", color: "red" }}>{error}</p>;
+    return <p className="error-text">{error}</p>;
   }
 
   if (records.length === 0) {
-    return (
-      <p style={styles.centerText}>No evidence records found.</p>
-    );
+    return <p className="empty-text">No evidence records found.</p>;
   }
 
   return (
-    <div style={styles.container}>
-      <h1 style={{ color: "#ffffff" }}>Evidence Records</h1>
+    <div className="view-records-container">
+      <h1 className="view-records-title">Evidence Records</h1>
 
-      {records.map((record, index) => {
-        const videoUrl = `http://localhost:5001/${record.file_path}`;
+      <div className="records-grid">
+        {records.map((record, index) => {
+          const videoUrl = `http://localhost:5001/${record.file_path}`;
+          const prediction = record.prediction || "PENDING";
+          const probability =
+            record.avg_probability !== null
+              ? (record.avg_probability * 100).toFixed(2) + "%"
+              : "—";
+          const analyzedAt = record.deepfake_analyzed_at
+            ? new Date(record.deepfake_analyzed_at).toLocaleString()
+            : "Not analyzed yet";
 
-        const prediction = record.prediction || "PENDING";
-        const probability =
-          record.avg_probability !== null
-            ? (record.avg_probability * 100).toFixed(2) + "%"
-            : "—";
+          return (
+            <div key={index} className="record-card">
+              <div className="record-info">
+                <p><strong>Case ID:</strong> {record.case_id}</p>
+                <p><strong>Evidence ID:</strong> {record.evidence_id}</p>
+                <p><strong>File Path:</strong> {record.file_path}</p>
+              </div>
 
-        const analyzedAt = record.deepfake_analyzed_at
-          ? new Date(record.deepfake_analyzed_at).toLocaleString()
-          : "Not analyzed yet";
-
-        return (
-          <div key={index} style={styles.card}>
-            <p><strong>Case ID:</strong> {record.case_id}</p>
-            <p><strong>Evidence ID:</strong> {record.evidence_id}</p>
-            <p><strong>File Path:</strong> {record.file_path}</p>
-
-            {/* 🔍 Deepfake Info */}
-            <div style={styles.analysisBox}>
-              <p>
-                <strong>Deepfake Result:</strong>{" "}
-                <span
-                  style={{
-                    color:
+              <div className="analysis-box">
+                <p>
+                  <strong>Deepfake Result:</strong>{" "}
+                  <span
+                    className={
                       prediction === "FAKE"
-                        ? "#ff6b6b"
+                        ? "prediction-fake"
                         : prediction === "REAL"
-                        ? "#34d399"
-                        : "#fbbf24",
-                  }}
-                >
-                  {prediction}
-                </span>
-              </p>
+                        ? "prediction-real"
+                        : "prediction-pending"
+                    }
+                  >
+                    {prediction}
+                  </span>
+                </p>
+                <p><strong>Average Probability:</strong> {probability}</p>
+                <p><strong>Analyzed At:</strong> {analyzedAt}</p>
+              </div>
 
-              <p>
-                <strong>Average Probability:</strong> {probability}
-              </p>
-
-              <p>
-                <strong>Analyzed At:</strong> {analyzedAt}
-              </p>
+              <video controls className="record-video">
+                <source src={videoUrl} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
-
-            <video controls style={styles.video}>
-              <source src={videoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
-};
-
-const styles = {
-  container: {
-    padding: "20px",
-    background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)",
-    minHeight: "100vh",
-    fontFamily: "Arial, sans-serif",
-    color: "#ffffff",
-  },
-  centerText: {
-    textAlign: "center",
-    color: "#ffffff",
-    background: "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%)",
-    minHeight: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  card: {
-    background: "#1a1a1a",
-    padding: "16px",
-    marginBottom: "20px",
-    borderRadius: "8px",
-    border: "1px solid #ffffff",
-    boxShadow: "0 2px 6px rgba(255,255,255,0.1)",
-  },
-  analysisBox: {
-    marginTop: "10px",
-    marginBottom: "10px",
-    padding: "10px",
-    borderRadius: "6px",
-    background: "#0f172a",
-    border: "1px solid #334155",
-  },
-  video: {
-    width: "100%",
-    maxWidth: "400px",
-    marginTop: "10px",
-    borderRadius: "6px",
-    border: "1px solid #ffffff",
-  },
 };
 
 export default ViewRecords;

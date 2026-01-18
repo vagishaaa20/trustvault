@@ -238,4 +238,3 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(` Access locally: http://localhost:${PORT}`);
   console.log(` Access from network: http://192.168.1.24:${PORT}`);
 });
-

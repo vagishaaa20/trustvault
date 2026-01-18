@@ -1,11 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-//import Login from "./Login";
 import Home from "./Home";
 import Landing from "./pages/Landing";
 import Login from "./pages/login";
 import Register from "./pages/Register";
-
-
+import LogFile from "./LogFile"; // adjust path as needed
 import AddEvidence from "./AddEvidence";
 import VerifyEvidence from "./VerifyEvidence";
 import ViewEvidence from "./ViewEvidence";
@@ -20,7 +18,7 @@ const App = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        
+        <Route path="/log-file" element={<LogFile />} />
         {/* Approach */}
         <Route path="/approach" element={<ViewEvidence />} />
 
